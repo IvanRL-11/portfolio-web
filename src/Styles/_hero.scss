@@ -1,0 +1,21 @@
+.info-p {
+  position: inherit;
+  z-index: inherit;
+
+  h1 {
+    font-family: $space-g;
+    font-size: 38px;
+    color: $primary;
+  }
+
+  p {
+    font-family: $inter;
+    font-size: 16px;
+    color: $white;
+    line-height: 1.2;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+  }
+}

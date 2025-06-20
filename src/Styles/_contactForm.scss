@@ -1,0 +1,55 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  max-width: 720px;
+  width: 100%;
+  height: auto;
+  padding: 50px 80px;
+  border-radius: 10px;
+  background-color: $bg-2;
+
+  h3 {
+    font-family: $inter;
+    font-weight: bold;
+    font-size: 16px;
+    color: $secondary;
+  }
+
+  input,
+  textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    color: $bg-2;
+    font-family: $inter;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+  }
+
+  textarea {
+    font-size: inherit;
+    resize: none;
+  }
+
+  input[type="submit"] {
+    max-width: 100px;
+    background-color: $bg-2;
+    border: thin solid $secondary;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-family: $inter;
+    font-weight: bold;
+    font-size: 18px;
+    color: $text-1;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $secondary;
+    }
+  }
+}
+
+.contact > :last-child {
+  align-self: center;
+}
