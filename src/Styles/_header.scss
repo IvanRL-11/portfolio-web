@@ -5,33 +5,120 @@
   border: 4px solid $primary;
   border-radius: 15px;
   padding: 20px 50px;
-  position: relative;
-  z-index: 3;
+  margin: 20px 40px 0 40px;
+  z-index: 50;
   backdrop-filter: blur(0.5rem);
+  position: relative;
 
-  @media screen and (max-width: 767px){
-    padding: 20px 15px;
+  .logo img {
+    width: 40px;
+  }
+
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 32px;
+    height: 28px;
+    position: relative;
+    z-index: 1100;
+
+    span {
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      background-color: $primary;
+      left: 0;
+      transition: all 0.3s ease;
+    }
+
+    span:nth-child(1) {
+      top: 0;
+    }
+
+    span:nth-child(2) {
+      top: 12px;
+    }
+
+    span:nth-child(3) {
+      top: 24px;
+    }
+
+    &.open {
+      span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 12px;
+      }
+
+      span:nth-child(2) {
+        opacity: 0;
+      }
+
+      span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 12px;
+      }
+    }
+  }
+
+  .sections-nav {
+    display: flex;
+    gap: 40px;
+
+    a {
+      color: $text-1;
+      font-family: $space-g;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 4px solid $primary;
+
+    .menu-toggle {
+      display: block;
+    }
+
+    .sections-nav {
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 250px;
+      height: 100vh;
+      background-color: $bg-2;
+      padding: 2rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      border-right: 4px solid $primary;
+      transition: left 0.3s ease-in-out;
+      z-index: 1000;
+
+      a {
+        color: $text-1;
+        font-family: $space-g;
+        font-size: 18px;
+        font-weight: bold;
+        //padding-bottom: 1px;
+        //border-bottom: 1px solid lightgrey;
+      }
+
+      &.open {
+        left: 0;
+      }
+    }
   }
 }
 
-/*.logo {
-  background-color: $bg-2;
-}*/
-
-.sections-nav {
-  display: flex;
-  gap: 40px;
-
-  @media screen and (max-width: 767px){
-    gap: 10px;
-  }
-
-  a {
-    color: $text-1;
-    font-family: $space-g;
-    font-size: 20px;
-    font-weight: bold;
-  }
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 900;
 }
 
 .hover-underline {

@@ -49,17 +49,16 @@ body {
     flex-direction: column;
     margin: 40px;
 
-    .img-p{
+    .img-p {
       order: 1;
 
       img {
-        width: 100%;
+        width: 10%;
         height: auto;
       }
-      
     }
 
-    .info-p{
+    .info-p {
       order: 2;
       display: inherit;
       flex-direction: inherit;
@@ -98,7 +97,7 @@ body {
   gap: 40px;
   justify-content: center;
   align-items: center;
-  border: thin solid red;
+  //border: thin solid red;
   flex-wrap: wrap;
 
   @media screen and (max-width: 767px) {

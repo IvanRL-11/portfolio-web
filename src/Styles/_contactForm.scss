@@ -53,3 +53,25 @@
 .contact > :last-child {
   align-self: center;
 }
+
+@media screen and (max-width: 767px) {
+  .contact {
+    padding: 20px;
+
+    input,
+    textarea {
+      margin: 5px 0;
+      padding: 5px;
+      font-size: 14px;
+    }
+
+    textarea {
+      font-size: inherit;
+      resize: none;
+    }
+
+    input[type="submit"] {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,16 +1,19 @@
-@import "./variables";
+@use "./variables";
 
 .carousel-container {
   position: relative;
   overflow: hidden;
-  background-color: $bg-2;
+  background-color: variables.$bg-2;
   height: 405px;
-  //width: auto;
+  width: auto;
   border-radius: 10px;
   padding: 20px;
-  border: thin solid yellow;
+  //border: thin solid yellow;
   //   --outer-r: 24px;
   //   --p-distance: 10px;
+  @media screen and (max-width: 767px){
+    padding: 10px;
+  }
 }
 
 .carousel-track {
@@ -24,13 +27,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  max-width: 100%;
-  border: 1px solid $secondary;
-  border-radius: 10px;
-  background-color: $bg-2;
+  max-width: 300px;
+  width: 100%;
+  //border: 1px solid $secondary;
+  //border-radius: 10px;
+  background-color: variables.$bg-2;
   overflow: hidden;
   cursor: grab;
-  //border: thin solid red;
 }
 
 .carousel-item:active {
@@ -66,7 +69,7 @@
 }*/
 
 .carousel-indicator.active {
-  background-color: $bg-2;
+  background-color: variables.$bg-2;
 }
 
 .carousel-indicator.inactive {
@@ -75,21 +78,22 @@
 
 .carousel-item-header {
   padding: 10px;
-//   border: thin solid yellow;
+  //border: thin solid yellow;
 }
 
 .carousel-icon-container {
   display: flex;
   height: 238px;
   width: 280px;
+  //width: 100%;
   overflow: hidden;
   align-items: center;
   justify-content: center;
   //border-radius: 50%;
   //background-color: #fff;
-  border: thin solid greenyellow;
+  //border: thin solid greenyellow;
 
-  img{
+  img {
     width: auto;
     height: 100%;
     object-fit: cover;
@@ -112,20 +116,26 @@
 
 .carousel-item-title {
   margin-bottom: 4px;
-  font-family: $inter;
+  font-family: variables.$inter;
   font-weight: 600;
   font-size: 18px;
-  color: $secondary;
+  color: variables.$secondary;
   text-align: center;
   //border: thin solid red;
+  @media screen and (max-width: 767px) {
+    font-size: 16px;
+  }
 }
 
 .carousel-item-description {
-  font-family: $inter;
+  font-family: variables.$inter;
   font-size: 16px;
-  color: $text-1;
+  color: variables.$text-1;
   text-align: center;
   //border: thin solid red;
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+  }
 }
 
 .carousel-indicators-container {
@@ -154,7 +164,7 @@
 }
 
 .carousel-indicator.active {
-  background-color: $secondary;
+  background-color: variables.$secondary;
   //border: thin solid goldenrod;
 }
 
