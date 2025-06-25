@@ -9,31 +9,31 @@ import "../Styles/_carousel.scss";
 
 const DEFAULT_ITEMS = [
   {
-    title: "Text Animations",
-    description: "Cool text animations for your projects.",
+    title: "Cortometrajes",
+    description: "Banner para el Diplomado Tránsitos.",
     id: 1,
     icon: <img src={Vogue} alt="icon" />,
   },
   {
-    title: "Animations",
-    description: "Smooth animations for your projects.",
+    title: "Cortometrajes",
+    description: "Banners para sitios web.",
     id: 2,
     icon: <img src={react} alt="icon" />,
   },
   {
-    title: "Components",
+    title: "Cortometrajes",
     description: "Reusable components for your projects.",
     id: 3,
     icon: <img src={react} alt="icon" />,
   },
   {
-    title: "Backgrounds",
+    title: "Cortometrajes",
     description: "Beautiful backgrounds and patterns for your projects.",
     id: 4,
     icon: <img src={react} alt="icon" />,
   },
   {
-    title: "Common UI",
+    title: "Cortometrajes",
     description: "Common UI components are coming soon!",
     id: 5,
     icon: <img src={react} alt="icon" />,

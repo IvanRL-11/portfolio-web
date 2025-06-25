@@ -1,4 +1,9 @@
-import CarouselDes from "./CarouselDes";
+import CarouselDes from "../carousels/CarouselDes";
+import CarouselPhoto from "../carousels/CarouselPhoto";
+import CarouselIllustration from "../carousels/CarouselIllustration";
+import CarouselEditorial from "../carousels/CarouselEditorial";
+import CarouselAnimation from "../carousels/CarouselAnimation";
+import CarouselVideo from "../carousels/CarouselVideo";
 
 const DesignProjects = () => {
   return (
@@ -13,7 +18,7 @@ const DesignProjects = () => {
           loop={true}
           round={false}
         />
-        <CarouselDes
+        <CarouselPhoto
           baseWidth={330}
           autoplay={true}
           autoplayDelay={3000}
@@ -22,7 +27,7 @@ const DesignProjects = () => {
           round={false}
         />
 
-        <CarouselDes
+        <CarouselIllustration
           baseWidth={330}
           autoplay={true}
           autoplayDelay={3000}
@@ -30,7 +35,7 @@ const DesignProjects = () => {
           loop={true}
           round={false}
         />
-        <CarouselDes
+        <CarouselEditorial
           baseWidth={330}
           autoplay={true}
           autoplayDelay={3000}
@@ -38,7 +43,7 @@ const DesignProjects = () => {
           loop={true}
           round={false}
         />
-        <CarouselDes
+        <CarouselAnimation
           baseWidth={330}
           autoplay={true}
           autoplayDelay={3000}
@@ -46,7 +51,7 @@ const DesignProjects = () => {
           loop={true}
           round={false}
         />
-        <CarouselDes
+        <CarouselVideo
           baseWidth={330}
           autoplay={true}
           autoplayDelay={3000}

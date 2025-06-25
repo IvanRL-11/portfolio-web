@@ -1,4 +1,3 @@
-import porfile from "../assets/porfile.jpeg";
 import avatar from "../assets/avatar.png";
 import "../Styles/Particles.css";
 

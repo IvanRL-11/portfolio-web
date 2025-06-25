@@ -1,17 +1,17 @@
-import react from "../assets/react.svg";
-import AI from "../assets/ai.svg";
-import PS from "../assets/ps.svg";
-import PR from "../assets/pr.svg";
-import AE from "../assets/ae.svg";
-import InD from "../assets/id.svg";
-import Figma from "../assets/figma.svg";
-import HTML from "../assets/html.svg";
-import CSS from "../assets/css.svg";
-import JS from "../assets/js.svg";
-import SASS from "../assets/sass.svg";
-import BOOTSTRAP from "../assets/bootstrap.svg";
-import DRUPAL from "../assets/drupal.svg";
-import WP from "../assets/wp.svg";
+import react from "../assets/icons/react.svg";
+import AI from "../assets/icons/ai.svg";
+import PS from "../assets/icons/ps.svg";
+import PR from "../assets/icons/pr.svg";
+import AE from "../assets/icons/ae.svg";
+import InD from "../assets/icons/id.svg";
+import Figma from "../assets/icons/figma.svg";
+import HTML from "../assets/icons/html.svg";
+import CSS from "../assets/icons/css.svg";
+import JS from "../assets/icons/js.svg";
+import SASS from "../assets/icons/sass.svg";
+import BOOTSTRAP from "../assets/icons/bootstrap.svg";
+import DRUPAL from "../assets/icons/drupal.svg";
+import WP from "../assets/icons/wp.svg";
 
 const Skills = () => {
   return (

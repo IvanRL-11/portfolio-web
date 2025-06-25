@@ -1,6 +1,7 @@
 .info-p {
   position: inherit;
   z-index: inherit;
+  backdrop-filter: blur(1px);
 
   h1 {
     font-family: $space-g;
