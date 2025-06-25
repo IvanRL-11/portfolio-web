@@ -14,6 +14,48 @@
     width: 40px;
   }
 
+  .sections-nav {
+    display: flex;
+    gap: 40px;
+
+    a {
+      color: $text-1;
+      font-family: $space-g;
+      font-size: 20px;
+      font-weight: bold;
+      //cursor: pointer;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.menu-movil {
+  display: none;
+
+  .nav-movil {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: $bg-2;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    border-right: 4px solid $primary;
+    z-index: 1000;
+    //overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.3s ease, opacity 0.5s ease;
+    transform: translate(-100%, 0);
+  }
+
   .menu-toggle {
     display: none;
     background: none;
@@ -62,20 +104,14 @@
     }
   }
 
-  .sections-nav {
-    display: flex;
-    gap: 40px;
-
-    a {
-      color: $text-1;
-      font-family: $space-g;
-      font-size: 20px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-  }
-
   @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    z-index: 100;
+    backdrop-filter: blur(0.5rem);
+    position: relative;
     margin: 0;
     border: 0;
     border-radius: 0;
@@ -85,32 +121,18 @@
       display: block;
     }
 
-    .sections-nav {
-      position: fixed;
-      top: 0;
-      left: -250px;
-      width: 250px;
-      height: 100vh;
-      background-color: $bg-2;
-      padding: 2rem 1.5rem;
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      border-right: 4px solid $primary;
-      transition: left 0.3s ease-in-out;
-      z-index: 1000;
-
+    .nav-movil {
       a {
         color: $text-1;
         font-family: $space-g;
         font-size: 18px;
         font-weight: bold;
-        //padding-bottom: 1px;
-        //border-bottom: 1px solid lightgrey;
       }
 
       &.open {
-        left: 0;
+        transform: translate(0, 0);
+        opacity: 1;
+        visibility: visible;
       }
     }
   }
@@ -119,6 +141,7 @@
 .overlay {
   position: fixed;
   inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 900;
 }
 
@@ -149,4 +172,10 @@
 .hover-underline:hover::after,
 .hover-underline:hover::before {
   transform: scaleX(1);
+}
+
+@media screen and (max-width: 767px) {
+  .hover-underline::before {
+    background: none;
+  }
 }

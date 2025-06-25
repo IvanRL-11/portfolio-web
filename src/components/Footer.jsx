@@ -1,6 +1,7 @@
 import React from "react";
 
 const Footer = () => {
+  const Year = new Date().getFullYear();
   return (
     <>
       <footer>
@@ -22,7 +23,7 @@ const Footer = () => {
             </a>
           </div>
         </nav>
-        <p>© Copyright 2025 · Iván Romero</p>
+        <p>© Copyright {Year} · Iván Romero</p>
       </footer>
     </>
   );
