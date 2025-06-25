@@ -23,26 +23,32 @@ const Skills = () => {
           <figure className="icon">
             <img src={AI} alt="Illustrator icon" />
             <figcaption>Illustrator</figcaption>
+            <p>60%</p>
           </figure>
           <figure className="icon">
             <img src={PS} alt="Photoshop icon" />
             <figcaption>Photoshop</figcaption>
+            <p>60%</p>
           </figure>
           <figure className="icon">
             <img src={InD} alt="InDesign icon" />
             <figcaption>InDesign</figcaption>
+            <p>50%</p>
           </figure>
           <figure className="icon">
             <img src={PR} alt="Premiere Pro icon" />
             <figcaption>Premiere Pro</figcaption>
+            <p>60%</p>
           </figure>
           <figure className="icon">
             <img src={AE} alt="After Effects icon" />
             <figcaption>After Effects</figcaption>
+            <p>40%</p>
           </figure>
           <figure className="icon">
             <img src={Figma} alt="Figma icon" />
             <figcaption>Figma</figcaption>
+            <p>35%</p>
           </figure>
         </section>
         <h3 className="sub-title-sec">Desarrollo Web</h3>

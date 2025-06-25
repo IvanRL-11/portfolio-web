@@ -29,7 +29,48 @@ const Header = () => {
           </button>
 
           <div className={`sections-nav ${menuOpen ? "open" : ""}`}>
-            <a href="#skills" onClick={closeMenu} className="hover-underline">
+            <a
+              onClick={(e) => {
+                e.preventDefault();
+                closeMenu();
+                setTimeout(() => {
+                  const section = document.getElementById("skills");
+                  section?.scrollIntoView({ behavior: "smooth" });
+                }, 300);
+              }}
+              className="hover-underline"
+            >
+              Habilidades
+            </a>
+
+            <a
+              onClick={(e) => {
+                e.preventDefault();
+                closeMenu();
+                setTimeout(() => {
+                  const section = document.getElementById("projects");
+                  section?.scrollIntoView({ behavior: "smooth" });
+                }, 300);
+              }}
+              className="hover-underline"
+            >
+              Proyectos
+            </a>
+
+            <a
+              onClick={(e) => {
+                e.preventDefault();
+                closeMenu();
+                setTimeout(() => {
+                  const section = document.getElementById("contact");
+                  section?.scrollIntoView({ behavior: "smooth" });
+                }, 300);
+              }}
+              className="hover-underline"
+            >
+              Contacto
+            </a>
+            {/* <a href="#skills" onClick={closeMenu} className="hover-underline">
               Habilidades
             </a>
             <a href="#projects" onClick={closeMenu} className="hover-underline">
@@ -37,7 +78,7 @@ const Header = () => {
             </a>
             <a href="#contact" onClick={closeMenu} className="hover-underline">
               Contacto
-            </a>
+            </a> */}
           </div>
         </nav>
       </header>

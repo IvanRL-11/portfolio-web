@@ -60,7 +60,7 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  z-index: 3;
+  z-index: 50;
 }
 .secc-info .img-p {
   order: 2;
@@ -81,7 +81,7 @@ body {
     order: 1;
   }
   .secc-info .img-p img {
-    width: 10%;
+    width: 100%;
     height: auto;
   }
   .secc-info .info-p {
@@ -103,6 +103,7 @@ body {
   gap: 45px;
   margin-bottom: 45px;
   margin: 0 100px 45px 100px;
+  z-index: 50;
 }
 @media screen and (max-width: 767px) {
   .layout-secc {
@@ -143,7 +144,7 @@ body {
   border-radius: 15px;
   padding: 20px 50px;
   margin: 20px 40px 0 40px;
-  z-index: 50;
+  z-index: 100;
   -webkit-backdrop-filter: blur(0.5rem);
           backdrop-filter: blur(0.5rem);
   position: relative;
@@ -198,6 +199,7 @@ body {
   font-family: "Space Grotesk", sans-serif;
   font-size: 20px;
   font-weight: bold;
+  cursor: pointer;
 }
 @media screen and (max-width: 767px) {
   .menu-nav {
@@ -344,6 +346,14 @@ body {
 .develop-skill .icon figcaption {
   font-family: "Inter", sans-serif;
   font-size: 16px;
+  font-style: italic;
+  color: #ffffff;
+}
+.design-skill .icon p,
+.develop-skill .icon p {
+  display: none;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
   font-style: italic;
   color: #ffffff;
 }

@@ -46,10 +46,22 @@
       color: $text-1;
     }
 
+    p {
+      display: none;
+      font-family: $inter;
+      font-size: 12px;
+      font-style: italic;
+      color: $text-1; 
+    }
+
     &:hover,
     &:focus {
       transform: translateY(-0.25em);
       filter: drop-shadow(0 2px 5px $white);
+
+      // p {
+      //   display: flex;
+      // }
     }
 
     @media screen and (max-width: 767px) {
