@@ -9,7 +9,7 @@ import CarouselAnimation from "../carousels/CarouselAnimation";
 const WebProyects = () => {
   const [isOpenModalMed, openModalMed, closeModalMed] = useModal(false);
   const [isOpenModalDDA, openModalDDA, closeModalDDA] = useModal(false);
-  const [isOpenModalEsInt, openModalEsInt, closeModalEsInt] = useModal(false);
+  // const [isOpenModalEsInt, openModalEsInt, closeModalEsInt] = useModal(false);
 
   return (
     <>
@@ -47,7 +47,7 @@ const WebProyects = () => {
           <button className="btn-ver-mas" onClick={openModalDDA}>
             <a>Ver más</a>
           </button>
-          <ModalWebP isOpen={isOpenModalDDA} closeModal={closeModal2}>
+          <ModalWebP isOpen={isOpenModalDDA} closeModal={closeModalDDAgi}>
             <h3>Otro Modal</h3>
             <p>Lorem ipsum</p>
             <img src="https://picsum.photos/300/300" alt="PlaceImg" />
