@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 // replace icons with your own if needed
 
-import react from "../assets/react.svg";
+import react from "../assets/icons/react.svg";
 import Vogue from "../assets/Design/Vogue_2_Final.jpg";
 
 import "../Styles/_carousel.scss";
