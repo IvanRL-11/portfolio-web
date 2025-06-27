@@ -5,6 +5,8 @@ import transi from "../assets/Mockups/transitos.png";
 import ModalWebP from "./ModalWebP";
 import { useModal } from "../hooks/useModal";
 import CarouselAnimation from "../carousels/CarouselAnimation";
+import MeduadP from "./MeduadP";
+import DdaP from "./DdaP";
 
 const WebProyects = () => {
   const [isOpenModalMed, openModalMed, closeModalMed] = useModal(false);
@@ -27,14 +29,7 @@ const WebProyects = () => {
           </button>
           <ModalWebP isOpen={isOpenModalMed} closeModal={closeModalMed}>
             <h2>Medaud</h2>
-            <CarouselAnimation
-              baseWidth={330}
-              autoplay={true}
-              autoplayDelay={1000}
-              pauseOnHover={true}
-              loop={true}
-              round={false}
-            />
+            <MeduadP />
           </ModalWebP>
         </div>
         <div className="card-web">
@@ -47,10 +42,9 @@ const WebProyects = () => {
           <button className="btn-ver-mas" onClick={openModalDDA}>
             <a>Ver más</a>
           </button>
-          <ModalWebP isOpen={isOpenModalDDA} closeModal={closeModalDDAgi}>
-            <h3>Otro Modal</h3>
-            <p>Lorem ipsum</p>
-            <img src="https://picsum.photos/300/300" alt="PlaceImg" />
+          <ModalWebP isOpen={isOpenModalDDA} closeModal={closeModalDDA}>
+            <h3>Dirección de Desarrollo Académico</h3>
+            <DdaP />
           </ModalWebP>
         </div>
         <div className="card-web">
