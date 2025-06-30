@@ -1,3 +1,5 @@
+@import "./variables";
+
 .modal {
   position: fixed;
   z-index: 999;
@@ -12,22 +14,68 @@
 }
 
 .modal.is-open {
-    display: flex;
+  display: flex;
 }
 
 .modal-container {
-    position: relative;
-    padding: 1rem;
-    min-width: 320px;
-    max-width: 480px;
-    min-height: 300px;
-    max-height: 600px;
-    overflow-y: auto;
-    background-color: #e5f7e4;
+  position: relative;
+  padding: 1rem;
+  min-width: 300px;
+  max-width: 840px;
+  min-height: 300px;
+  max-height: 600px;
+  overflow-y: auto;
+  background-color: $bg-2;
+  color: $text-1;
+  border-radius: 5px;
+
+  button {
+    border-radius: 5px;
+    border: thin solid $secondary;
+    font-size: 16px;
+    padding: 4px;
+    line-height: 1;
+    background-color: $bg-2;
+    color: $text-1;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $secondary;
+    }
+  }
 }
 
 .modal-close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.web-project {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  h3 {
+    color: $secondary;
+    padding-bottom: 5px;
+  }
+
+  p {
+    padding-bottom: 5px;
+  }
+
+  a {
+    color: $secondary;
+    font-style: italic;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: lightseagreen;
+      text-decoration: underline;
+      //transform: scale(1.5);
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
 }

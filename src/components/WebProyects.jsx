@@ -43,7 +43,7 @@ const WebProyects = () => {
             <a>Ver más</a>
           </button>
           <ModalWebP isOpen={isOpenModalDDA} closeModal={closeModalDDA}>
-            <h3>Dirección de Desarrollo Académico</h3>
+            <h2>Dirección de Desarrollo Académico</h2>
             <DdaP />
           </ModalWebP>
         </div>

@@ -789,6 +789,34 @@ footer p {
   }
 }
 
+/*Colores*/
+/*Fuentes*/
+h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 38px;
+  font-weight: bold;
+  color: #00ff88;
+}
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 22px !important;
+    text-align: center;
+  }
+}
+
+h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #00cc66;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 20px !important;
+  }
+}
+
 .modal {
   position: fixed;
   z-index: 999;
@@ -809,16 +837,57 @@ footer p {
 .modal-container {
   position: relative;
   padding: 1rem;
-  min-width: 320px;
-  max-width: 480px;
+  min-width: 300px;
+  max-width: 840px;
   min-height: 300px;
   max-height: 600px;
   overflow-y: auto;
-  background-color: #e5f7e4;
+  background-color: #262626;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.modal-container button {
+  border-radius: 5px;
+  border: thin solid #00cc66;
+  font-size: 16px;
+  padding: 4px;
+  line-height: 1;
+  background-color: #262626;
+  color: #ffffff;
+  cursor: pointer;
+}
+.modal-container button:hover {
+  background-color: #00cc66;
 }
 
 .modal-close {
   position: absolute;
   top: 1rem;
   right: 1rem;
+}
+
+.web-project {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.web-project h3 {
+  color: #00cc66;
+  padding-bottom: 5px;
+}
+.web-project p {
+  padding-bottom: 5px;
+}
+.web-project a {
+  color: #00cc66;
+  font-style: italic;
+  transition: all 0.2s ease-in-out;
+}
+.web-project a:hover {
+  color: lightseagreen;
+  text-decoration: underline;
+}
+@media screen and (max-width: 767px) {
+  .web-project {
+    grid-template-columns: 1fr;
+  }
 }/*# sourceMappingURL=App.css.map */
