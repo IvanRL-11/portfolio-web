@@ -1,4 +1,5 @@
 import React from "react";
+import EstudiosCarousel from "../carousels/EstudiosCarousel";
 
 const EstudiosIntWebs = () => {
   return (
@@ -17,8 +18,18 @@ const EstudiosIntWebs = () => {
             reorganización del contenido desde el panel de administración, y
             ajustes en el layout a nivel de código y plantilla.
           </p>
-          <a href="#">Sitio web OCI</a>
+          <a href="#">Sitio web OCI</a> <br />
           <a href="#">Sitio web TRÁNSITOS</a>
+        </article>
+        <article className="Carousles-webP">
+          <EstudiosCarousel
+            baseWidth={330}
+            autoplay={true}
+            autoplayDelay={3000}
+            pauseOnHover={true}
+            loop={true}
+            round={false}
+          />
         </article>
       </section>
     </>

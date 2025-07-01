@@ -1,3 +1,5 @@
+import MedaudCarousel from "../carousels/MedaudCarousel";
+
 const Meduad = () => {
   return (
     <>
@@ -7,8 +9,9 @@ const Meduad = () => {
           <p>
             Sitio web del área de Medios audiovisuales, Universidad Autónoma
             Metropolitana, Unidad Xochimilco.
-            <br /> Rol: Co-diseñador y desarrollador.
-            <br /> Herramientas: Drupal, HTML, CSS, Sass, Bootstrap. <br />
+            <br /> <strong>Rol:</strong> Co-diseñador y desarrollador.
+            <br /> <strong>Herramientas:</strong> Drupal, HTML, CSS, Sass,
+            Bootstrap. <br />
             Medaud es un sitio web, desarrollado como proyecto terminal dentro
             del área de medios audiovisuales. El principal objetivo del
             desarrollo del sitio web, es que los alumnos de la licenciatura en
@@ -26,6 +29,16 @@ const Meduad = () => {
             como HTML, CSS, Sass y Bootstrap.
           </p>
           <a href="#">Sitio web MEDAUD</a>
+        </article>
+        <article className="Carousles-webP">
+          <MedaudCarousel
+            baseWidth={330}
+            autoplay={true}
+            autoplayDelay={3000}
+            pauseOnHover={true}
+            loop={true}
+            round={false}
+          />
         </article>
       </section>
     </>

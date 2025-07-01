@@ -21,13 +21,13 @@
   position: relative;
   padding: 1rem;
   min-width: 300px;
-  max-width: 840px;
+  max-width: 900px;
   min-height: 300px;
-  max-height: 600px;
+  max-height: 800px;
   overflow-y: auto;
   background-color: $bg-2;
   color: $text-1;
-  border-radius: 5px;
+  //border-radius: 5px;
 
   button {
     border-radius: 5px;
@@ -52,8 +52,30 @@
 }
 
 .web-project {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  gap: 10px;
+  //border: thin solid red;
+
+  .Carousles-webP {
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    // border: thin solid red;
+    // padding: 0;
+
+    img {
+      border-radius: 0;
+      height: 100%;
+      width: auto;
+      transition: all 0.3s ease-in-out;
+      object-fit: contain;
+
+      &:hover {
+        transform: scale(1.2);
+        overflow-y: auto;
+      }
+    }
+  }
   h3 {
     color: $secondary;
     padding-bottom: 5px;
@@ -61,6 +83,7 @@
 
   p {
     padding-bottom: 5px;
+    font-size: 16px;
   }
 
   a {
@@ -71,11 +94,15 @@
     &:hover {
       color: lightseagreen;
       text-decoration: underline;
-      //transform: scale(1.5);
     }
   }
 
   @media screen and (max-width: 767px) {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    gap: 2px;
+
+    p {
+      font-size: 12px;
+    }
   }
 }

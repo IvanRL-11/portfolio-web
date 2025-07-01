@@ -1,4 +1,5 @@
 import React from "react";
+import EstudiosCarousel from "../carousels/EstudiosCarousel";
 
 const DdaP = () => {
   return (
@@ -15,9 +16,19 @@ const DdaP = () => {
           <p>
             Participé en el desarrollo del sitio web de la Dirección de
             Desarrollo Académico, implementado con WordPress. Contribuí con
-            ajustes personalizados de layout y estilo mediante código CSS. 
+            ajustes personalizados de layout y estilo mediante código CSS.
           </p>
           <a href="#">Sitio web DDA</a>
+        </article>
+        <article className="Carousles-webP">
+          <EstudiosCarousel
+            baseWidth={330}
+            autoplay={true}
+            autoplayDelay={3000}
+            pauseOnHover={true}
+            loop={true}
+            round={false}
+          />
         </article>
       </section>
     </>

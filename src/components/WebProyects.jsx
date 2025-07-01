@@ -4,14 +4,14 @@ import transi from "../assets/Mockups/transitos.png";
 //Modal - Ventana Emergente
 import ModalWebP from "./ModalWebP";
 import { useModal } from "../hooks/useModal";
-import CarouselAnimation from "../carousels/CarouselAnimation";
 import MeduadP from "./MeduadP";
 import DdaP from "./DdaP";
+import EstudiosIntWebs from "./EstudiosIntWebs";
 
 const WebProyects = () => {
   const [isOpenModalMed, openModalMed, closeModalMed] = useModal(false);
   const [isOpenModalDDA, openModalDDA, closeModalDDA] = useModal(false);
-  // const [isOpenModalEsInt, openModalEsInt, closeModalEsInt] = useModal(false);
+  const [isOpenModalEsInt, openModalEsInt, closeModalEsInt] = useModal(false);
 
   return (
     <>
@@ -54,9 +54,13 @@ const WebProyects = () => {
             Actualización y mantenimiento de los sitios web de la dirección de
             Estudios Interdisciplinarios del CENART.
           </p>
-          <button className="btn-ver-mas">
-            <a href="#">Ver más</a>
+          <button className="btn-ver-mas" onClick={openModalEsInt}>
+            <a>Ver más</a>
           </button>
+          <ModalWebP isOpen={isOpenModalEsInt} closeModal={closeModalEsInt}>
+            <h2>Diplomado Tránsitos & Ofeta Curricular Interdisciplinaria</h2>
+            <EstudiosIntWebs />
+          </ModalWebP>
         </div>
       </section>
     </>
