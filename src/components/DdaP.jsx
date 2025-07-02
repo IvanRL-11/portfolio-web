@@ -1,5 +1,4 @@
-import React from "react";
-import EstudiosCarousel from "../carousels/EstudiosCarousel";
+import DDACarousel from "../carousels/DDACarousel";
 
 const DdaP = () => {
   return (
@@ -10,7 +9,6 @@ const DdaP = () => {
           <p>
             Realice algunas propuestas UX para el sitio web de la Dirección de
             Desarrollo Académico del Centro Nacional de las Artes.
-            <br /> Propuestas para la sección de Estudios Interdisciplinarios.
           </p>
           <h3>Desarrollo web</h3>
           <p>
@@ -18,10 +16,10 @@ const DdaP = () => {
             Desarrollo Académico, implementado con WordPress. Contribuí con
             ajustes personalizados de layout y estilo mediante código CSS.
           </p>
-          <a href="#">Sitio web DDA</a>
+          <a href="https://desarrolloacademico.cenart.gob.mx/" target="_blank">Sitio web DDA</a>
         </article>
         <article className="Carousles-webP">
-          <EstudiosCarousel
+          <DDACarousel
             baseWidth={330}
             autoplay={true}
             autoplayDelay={3000}

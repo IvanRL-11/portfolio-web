@@ -2,29 +2,33 @@ import { useEffect, useState, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 // replace icons with your own if needed
 
-import react from "../assets/icons/react.svg";
-import Vogue from "../assets/Design/Vogue_2_Final.jpg";
+import transitos1 from "../assets/dda/transitos-1.jpg";
+import transitos2 from "../assets/dda/transitos-2.jpg";
+import transitos3 from "../assets/dda/transitos-3.jpg";
 
 import "../Styles/_carousel.scss";
 
 const DEFAULT_ITEMS = [
   {
-    title: "Animación 2D",
-    description: "Banner para el Diplomado Tránsitos.",
+    title: "Propuesta UX",
+    description:
+      "",
     id: 1,
-    icon: <img src={Vogue} alt="icon" />,
+    icon: <img src={transitos1} alt="Propuesta ux para sitio DDA" />,
   },
   {
-    title: "Animación 2D",
-    description: "Banners para sitios web.",
+    title: "Propuesta UX",
+    description:
+      "",
     id: 2,
-    icon: <img src={react} alt="icon" />,
+    icon: <img src={transitos2} alt="Propuesta ux para sitio DDA" />,
   },
   {
-    title: "Animación 2D",
-    description: "Reusable components for your projects.",
+    title: "Propuesta UX",
+    description:
+      "",
     id: 3,
-    icon: <img src={react} alt="icon" />,
+    icon: <img src={transitos3} alt="Propuesta ux para sitio DDA" />,
   },
 ];
 

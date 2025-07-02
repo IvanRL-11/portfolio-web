@@ -2,29 +2,25 @@ import { useEffect, useState, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 // replace icons with your own if needed
 
-import react from "../assets/icons/react.svg";
-import Vogue from "../assets/Design/Vogue_2_Final.jpg";
+import paletaOci from '../assets/estudios_inter/paleta-oci.jpg';
+import paletaTrans from '../assets/estudios_inter/paleta-transitos.jpg';
 
 import "../Styles/_carousel.scss";
 
 const DEFAULT_ITEMS = [
   {
-    title: "Animación 2D",
-    description: "Banner para el Diplomado Tránsitos.",
+    title: "Paleta Cromatica Tránsitos",
+    description:
+      "",
     id: 1,
-    icon: <img src={Vogue} alt="icon" />,
+    icon: <img src={paletaTrans} alt="Paleta de colores de sitio web Tránsitos" />,
   },
   {
-    title: "Animación 2D",
-    description: "Banners para sitios web.",
+    title: "Paleta Cromatica OCI",
+    description:
+      "",
     id: 2,
-    icon: <img src={react} alt="icon" />,
-  },
-  {
-    title: "Animación 2D",
-    description: "Reusable components for your projects.",
-    id: 3,
-    icon: <img src={react} alt="icon" />,
+    icon: <img src={paletaOci} alt="Paleta de colores de sitio web OCI" />,
   },
 ];
 
