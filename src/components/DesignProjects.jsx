@@ -45,7 +45,7 @@ const DesignProjects = () => {
         />
         <CarouselAnimation
           baseWidth={330}
-          autoplay={true}
+          autoplay={false}
           autoplayDelay={3000}
           pauseOnHover={true}
           loop={true}

@@ -2,29 +2,51 @@ import { useEffect, useState, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 // replace icons with your own if needed
 
-import react from "../assets/icons/react.svg";
-import Vogue from "../assets/Design/Vogue_2_Final.jpg";
+import triptico1Mock from "../assets/Design/editorial/triptico-1-m.jpg";
+import triptico2Mock from "../assets/Design/editorial/triptico-2-m.jpg";
+import trip1 from "../assets/Design/editorial/trip-1.1.jpg";
+import trip2 from "../assets/Design/editorial/trip-1.2.jpg";
+import trip3 from "../assets/Design/editorial/trip-2.1.jpg";
+import trip4 from "../assets/Design/editorial/trip-2.2.jpg";
 
 import "../Styles/_carousel.scss";
 
 const DEFAULT_ITEMS = [
   {
     title: "Diseño Editorial",
-    description: "Banner para el Diplomado Tránsitos.",
+    description: "Triptico, realizado en InDesign.",
     id: 1,
-    icon: <img src={Vogue} alt="icon" />,
+    icon: <img src={trip1} alt="Triptico" />,
   },
   {
     title: "Diseño Editorial",
-    description: "Banners para sitios web.",
+    description: "Tiene, sus marcas de registro, de sangrado y corte.",
     id: 2,
-    icon: <img src={react} alt="icon" />,
+    icon: <img src={trip2} alt="Triptico" />,
   },
   {
     title: "Diseño Editorial",
-    description: "Reusable components for your projects.",
+    description: "Mockup vista externa.",
     id: 3,
-    icon: <img src={react} alt="icon" />,
+    icon: <img src={triptico1Mock} alt="Triptico" />,
+  },
+  {
+    title: "Diseño Editorial",
+    description: "Triptico, realizado en InDesign.",
+    id: 4,
+    icon: <img src={trip3} alt="Triptico" />,
+  },
+  {
+    title: "Diseño Editorial",
+    description: "Tiene, sus marcas de registro, de sangrado y corte.",
+    id: 5,
+    icon: <img src={trip4} alt="Triptico" />,
+  },
+  {
+    title: "Diseño Editorial",
+    description: "Mockup vista interna.",
+    id: 6,
+    icon: <img src={triptico2Mock} alt="Triptico" />,
   },
 ];
 
@@ -179,7 +201,9 @@ export default function CarouselDes({
               transition={effectiveTransition}
             >
               <div className={`carousel-item-header ${round ? "round" : ""}`}>
-                <span className="carousel-icon-container">{item.icon}</span>
+                <span className="carousel-icon-container-horiz">
+                  {item.icon}
+                </span>
               </div>
               <div className="carousel-item-content">
                 <div className="carousel-item-title">{item.title}</div>

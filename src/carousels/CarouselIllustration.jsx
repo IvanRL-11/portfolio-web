@@ -2,35 +2,44 @@ import { useEffect, useState, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 // replace icons with your own if needed
 
-import react from "../assets/icons/react.svg";
-import Vogue from "../assets/Design/Vogue_2_Final.jpg";
+import giraffes from "../assets/Design/ilustracion/giraffe-mix.jpg";
+import giraffesMock from "../assets/Design/ilustracion/giraffes-m.jpg";
+import hormiguta from "../assets/Design/ilustracion/hormiguita-mix.jpg";
+import hormiguitaMock from "../assets/Design/ilustracion/la-hormiguita-m.jpg";
+import mural from "../assets/Design/ilustracion/ilustracion-mural.jpg";
 
 import "../Styles/_carousel.scss";
 
 const DEFAULT_ITEMS = [
   {
     title: "Ilustración Digital",
-    description: "Banner para el Diplomado Tránsitos.",
+    description: "Ejercicio de re-edición de portada de libro infantil.",
     id: 1,
-    icon: <img src={Vogue} alt="icon" />,
+    icon: <img src={hormiguta} alt="icon" />,
   },
   {
     title: "Ilustración Digital",
-    description: "Banners para sitios web.",
+    description: "Mockup del resultado.",
     id: 2,
-    icon: <img src={react} alt="icon" />,
+    icon: <img src={hormiguitaMock} alt="icon" />,
   },
   {
     title: "Ilustración Digital",
-    description: "Reusable components for your projects.",
+    description: "Ejercicio de re-edición de portada de libro infantil.",
     id: 3,
-    icon: <img src={react} alt="icon" />,
+    icon: <img src={giraffes} alt="icon" />,
   },
   {
     title: "Ilustración Digital",
-    description: "Beautiful backgrounds and patterns for your projects.",
+    description: "Mockup del resultado.",
     id: 4,
-    icon: <img src={react} alt="icon" />,
+    icon: <img src={giraffesMock} alt="icon" />,
+  },
+  {
+    title: "Ilustración Digital",
+    description: "Ilustración a gran escala como propuesta de mural.",
+    id: 5,
+    icon: <img src={mural} alt="icon" />,
   },
 ];
 

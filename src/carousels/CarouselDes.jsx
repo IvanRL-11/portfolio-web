@@ -2,41 +2,59 @@ import { useEffect, useState, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 // replace icons with your own if needed
 
-import react from "../assets/icons/react.svg";
-import Vogue from "../assets/Design/Vogue_2_Final.jpg";
+import gif1 from "../assets/Design/diseño/gif-oci.gif";
+import bannerPre from "../assets/Design/Diseño/banner-pre.jpg";
+import bannerT from "../assets/Design/Diseño/banner-t.jpg";
+//import bannerTrans33 from "../assets/Design/Diseño/banner-info.jpg";
+import gifT from "../assets/Design/Diseño/gif-t.gif";
+import gifInt from "../assets/Design/Diseño/gif-int.gif";
+import bannerInf1 from "../assets/Design/Diseño/banner-info-1.jpg";
+import bannerInf2 from "../assets/Design/Diseño/banner-info-2.jpg";
 
 import "../Styles/_carousel.scss";
 
 const DEFAULT_ITEMS = [
   {
-    title: "Diseño Banners",
-    description: "Banner para el Diplomado Tránsitos.",
+    title: "Diseño",
+    description: "Banner de promoción al Diplomado Tránsitos 33.",
     id: 1,
-    icon: <img src={Vogue} alt="icon" />,
+    icon: <img src={bannerInf1} alt="banner" />,
   },
   {
-    title: "Diseño Banners",
-    description: "Banners para sitios web.",
+    title: "Diseño",
+    description: "Banner de promoción al Diplomado Tránsitos 33.",
     id: 2,
-    icon: <img src={react} alt="icon" />,
+    icon: <img src={bannerInf2} alt="banner" />,
   },
   {
-    title: "Diseño Banners",
-    description: "Reusable components for your projects.",
+    title: "Diseño",
+    description: "Banner de promoción al Diplomado Tránsitos 33.",
     id: 3,
-    icon: <img src={react} alt="icon" />,
+    icon: <img src={bannerT} alt="banner Tránsitos" />,
   },
   {
-    title: "Diseño Banners",
-    description: "Beautiful backgrounds and patterns for your projects.",
+    title: "Diseño",
+    description: "Banner de pre-registro a la nueva oferta.",
     id: 4,
-    icon: <img src={react} alt="icon" />,
+    icon: <img src={bannerPre} alt="banner pre-registro" />,
   },
   {
-    title: "Diseño Banners",
-    description: "Common UI components are coming soon!",
+    title: "Diseño",
+    description: "Gif de actividades realizadas en los cursos OCI.",
     id: 5,
-    icon: <img src={react} alt="icon" />,
+    icon: <img src={gif1} alt="Gif OCI" />,
+  },
+  {
+    title: "Diseño",
+    description: "Gif de actividades realizadas en los cursos Tránsitos",
+    id: 6,
+    icon: <img src={gifT} alt="Gif Tránsitos" />,
+  },
+  {
+    title: "Diseño",
+    description: "Gif de actividades realizadas en los cursos Interacciones",
+    id: 7,
+    icon: <img src={gifInt} alt="Gif Interacciones" />,
   },
 ];
 
@@ -191,7 +209,9 @@ export default function CarouselDes({
               transition={effectiveTransition}
             >
               <div className={`carousel-item-header ${round ? "round" : ""}`}>
-                <span className="carousel-icon-container">{item.icon}</span>
+                <span className="carousel-icon-container-horiz">
+                  {item.icon}
+                </span>
               </div>
               <div className="carousel-item-content">
                 <div className="carousel-item-title">{item.title}</div>

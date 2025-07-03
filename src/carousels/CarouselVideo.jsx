@@ -2,41 +2,60 @@ import { useEffect, useState, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 // replace icons with your own if needed
 
-import react from "../assets/icons/react.svg";
-import Vogue from "../assets/Design/Vogue_2_Final.jpg";
-
 import "../Styles/_carousel.scss";
 
 const DEFAULT_ITEMS = [
   {
     title: "Cortometrajes",
-    description: "Banner para el Diplomado Tránsitos.",
+    description: "Paricipe en la producción y post-producción.",
     id: 1,
-    icon: <img src={Vogue} alt="icon" />,
+    icon: (
+      <iframe
+        width="100%"
+        height="auto"
+        src="https://www.youtube.com/embed/xEWeQ6jwu4c?si=rNVeYx0KxoTYcX7S"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        controls
+      ></iframe>
+    ),
   },
   {
     title: "Cortometrajes",
-    description: "Banners para sitios web.",
+    description: "Paricipe en la producción y post-producción.",
     id: 2,
-    icon: <img src={react} alt="icon" />,
+    icon: (
+      <iframe
+        width="100%"
+        height="auto"
+        src="https://www.youtube.com/embed/v4NRx_V-B2E?si=uNjVzH-6dopJS1k1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    ),
   },
   {
     title: "Cortometrajes",
-    description: "Reusable components for your projects.",
+    description: "Paricipe en la producción y post-producción.",
     id: 3,
-    icon: <img src={react} alt="icon" />,
-  },
-  {
-    title: "Cortometrajes",
-    description: "Beautiful backgrounds and patterns for your projects.",
-    id: 4,
-    icon: <img src={react} alt="icon" />,
-  },
-  {
-    title: "Cortometrajes",
-    description: "Common UI components are coming soon!",
-    id: 5,
-    icon: <img src={react} alt="icon" />,
+    icon: (
+      <iframe
+        width="100%"
+        height="auto"
+        src="https://www.youtube.com/embed/5XdR33KY-Bw?si=a5mrGoAkLuK04fFX"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    ),
   },
 ];
 

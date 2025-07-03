@@ -599,6 +599,22 @@ h2 {
   display: block;
 }
 
+.carousel-icon-container-horiz {
+  display: flex;
+  height: 238px;
+  width: 280px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-icon-container-horiz img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
 .carousel-item-content {
   padding: 10px;
 }

@@ -2,29 +2,25 @@ import { useEffect, useState, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 // replace icons with your own if needed
 
-import react from "../assets/icons/react.svg";
-import Vogue from "../assets/Design/Vogue_2_Final.jpg";
-
 import "../Styles/_carousel.scss";
 
 const DEFAULT_ITEMS = [
   {
     title: "Animación 2D",
-    description: "Banner para el Diplomado Tránsitos.",
+    description: "Animación de una ilustración realizada en After Effects",
     id: 1,
-    icon: <img src={Vogue} alt="icon" />,
-  },
-  {
-    title: "Animación 2D",
-    description: "Banners para sitios web.",
-    id: 2,
-    icon: <img src={react} alt="icon" />,
-  },
-  {
-    title: "Animación 2D",
-    description: "Reusable components for your projects.",
-    id: 3,
-    icon: <img src={react} alt="icon" />,
+    icon: (
+      <iframe
+        width="100%"
+        height="auto"
+        src="https://www.youtube.com/embed/dRISFabf6uY?si=aP2-Wg72FoJjGruW"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    ),
   },
 ];
 
