@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 // replace icons with your own if needed
 
-import gif1 from "../assets/Design/diseño/gif-oci.gif";
+import gif1 from "../assets/Design/Diseño/gif-oci.gif";
 import bannerPre from "../assets/Design/Diseño/banner-pre.jpg";
 import bannerT from "../assets/Design/Diseño/banner-t.jpg";
 //import bannerTrans33 from "../assets/Design/Diseño/banner-info.jpg";
