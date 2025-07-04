@@ -10,8 +10,8 @@ const Header = () => {
       <header>
         <nav className="menu-nav">
           <div className="logo">
-            <a href="../index.html">
-              <img src="/vite.svg" alt="logo-website" />
+            <a href="../index.html" className="logo">
+              IR
             </a>
           </div>
 

@@ -29,6 +29,14 @@ footer {
   align-items: center;
   width: 100%;
   padding: 0 50px;
+
+  .logo-footer {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: $primary;
+  }
   @media screen and (max-width: 767px) {
     gap: 10px;
     flex-direction: column;

@@ -10,9 +10,29 @@
   backdrop-filter: blur(0.3rem);
   position: relative;
 
-  .logo img {
-    width: 40px;
+  .logo {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: $primary;
+    animation: fadeIn 0.7s ease-in;
   }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  // .logo img {
+  //   width: 40px;
+  // }
 
   .sections-nav {
     display: flex;
@@ -34,6 +54,26 @@
 
 .menu-movil {
   display: none;
+
+  .logo {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: $primary;
+    animation: fadeIn 0.7s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
   .nav-movil {
     position: fixed;

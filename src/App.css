@@ -149,8 +149,23 @@ body {
           backdrop-filter: blur(0.3rem);
   position: relative;
 }
-.menu-nav .logo img {
-  width: 40px;
+.menu-nav .logo {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: #00ff88;
+  animation: fadeIn 0.7s ease-in;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .menu-nav .sections-nav {
   display: flex;
@@ -170,6 +185,24 @@ body {
 
 .menu-movil {
   display: none;
+}
+.menu-movil .logo {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: #00ff88;
+  animation: fadeIn 0.7s ease-in;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .menu-movil .nav-movil {
   position: fixed;
@@ -307,8 +340,8 @@ body {
 .info-p {
   position: inherit;
   z-index: inherit;
-  -webkit-backdrop-filter: blur(1px);
-          backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
 }
 .info-p h1 {
   font-family: "Space Grotesk", sans-serif;
@@ -774,6 +807,13 @@ footer p {
   align-items: center;
   width: 100%;
   padding: 0 50px;
+}
+.footer-nav .logo-footer {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: #00ff88;
 }
 @media screen and (max-width: 767px) {
   .footer-nav {

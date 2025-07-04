@@ -1,4 +1,4 @@
-import avatar from "../assets/avatar.png";
+import avatarFinal from "../assets/avatar-min.jpg";
 import "../Styles/Particles.css";
 
 const Hero = () => {
@@ -6,7 +6,7 @@ const Hero = () => {
     <>
       <section className="secc-info">
         <figure className="img-p">
-          <img src={avatar} alt="Porfile image" loading="eager" />
+          <img src={avatarFinal} alt="Porfile image" loading="eager" />
         </figure>
         <div className="info-p">
           <h1>
@@ -14,10 +14,11 @@ const Hero = () => {
             <br /> Diseñador de la Comunicación Gráfica
           </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac
-            consectetur sapien. Praesent metus velit, consequat eu condimentum
-            eu, gravida at dolor. Pellentesque mi nunc, pharetra eu purus eget,
-            tincidunt tincidunt sapien.
+            Tengo pasión por el Diseño y Desarrollo Web, en cada proyecto busco
+            integrar soluciones visuales y funcionales mediante el uso de
+            herramientas de diseño y tecnologías web. También tengo conocimiento
+            en medios audiovisuales, lo que me permite abordar los proyectos con
+            un enfoque narrativo, estético y multidisciplinario.
           </p>
         </div>
       </section>
