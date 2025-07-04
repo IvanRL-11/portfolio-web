@@ -424,7 +424,7 @@ body {
 .develop-skill .icon:hover,
 .develop-skill .icon:focus {
   transform: translateY(-0.25em);
-  filter: drop-shadow(0 2px 5px #ffffff);
+  filter: drop-shadow(0 2px 4px #ffffff);
 }
 @media screen and (max-width: 767px) {
   .design-skill .icon,
@@ -483,7 +483,7 @@ body {
 }
 @media screen and (max-width: 767px) {
   .description {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
@@ -965,6 +965,6 @@ h2 {
     gap: 2px;
   }
   .web-project p {
-    font-size: 12px;
+    font-size: 14px;
   }
 }/*# sourceMappingURL=App.css.map */

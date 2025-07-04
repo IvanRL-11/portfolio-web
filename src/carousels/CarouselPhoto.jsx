@@ -2,15 +2,13 @@ import { useEffect, useState, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 // replace icons with your own if needed
 
-//import fotoPro from "../assets/Design/fotografia/f-producto.jpg";
-//import fotoProMock from "../assets/Design/fotografia/foto-producto-m.jpg";
-import inked1 from "../assets/Design/fotografia/inked1.jpg";
-import inked2 from "../assets/Design/fotografia/inked2.jpg";
-import inked2Mock from "../assets/Design/fotografia/inked-2-m.jpg";
-import inked3 from "../assets/Design/fotografia/inked3.jpg";
-import inked3Mock from "../assets/Design/fotografia/inked-3-m.jpg";
-import vogue from "../assets/Design/fotografia/vogue.jpg";
-import vogueMock from "../assets/Design/fotografia/vogue-m.png";
+import inked1 from "../assets/Design/fotografia/inked.webp";
+import inked2 from "../assets/Design/fotografia/inked-2.webp";
+import inked2Mock from "../assets/Design/fotografia/inked-2-m.webp";
+import inked3 from "../assets/Design/fotografia/inked-3.webp";
+import inked3Mock from "../assets/Design/fotografia/inked-3-m.webp";
+import vogue from "../assets/Design/fotografia/vogue.webp";
+import vogueMock from "../assets/Design/fotografia/vogue-m.webp";
 
 import "../Styles/_carousel.scss";
 
@@ -19,43 +17,43 @@ const DEFAULT_ITEMS = [
     title: "Fotografía",
     description: "Ejercicio fotográfico de portada de la revista Vogue.",
     id: 1,
-    icon: <img src={vogue} alt="icon" />,
+    icon: <img src={vogue} alt="icon" loading="lazy" />,
   },
   {
     title: "Fotografía",
     description: "Mockup del resultado final.",
     id: 2,
-    icon: <img src={vogueMock} alt="icon" />,
+    icon: <img src={vogueMock} alt="icon" loading="lazy" />,
   },
   {
     title: "Fotografía",
     description: "Ejercicio fotográfico de portada de la revista Inked.",
     id: 3,
-    icon: <img src={inked3} alt="icon" />,
+    icon: <img src={inked3} alt="icon" loading="lazy" />,
   },
   {
     title: "Fotografía",
     description: "Mockup del resultado final.",
     id: 4,
-    icon: <img src={inked3Mock} alt="icon" />,
+    icon: <img src={inked3Mock} alt="icon" loading="lazy" />,
   },
   {
     title: "Fotografía",
     description: "Ejercicio fotográfico de portada de la revista Inked.",
     id: 5,
-    icon: <img src={inked2} alt="icon" />,
+    icon: <img src={inked2} alt="icon" loading="lazy" />,
   },
   {
     title: "Fotografía",
     description: "Mockup del resultado final.",
     id: 6,
-    icon: <img src={inked2Mock} alt="icon" />,
+    icon: <img src={inked2Mock} alt="icon" loading="lazy" />,
   },
   {
     title: "Fotografía",
     description: "Ejercicio fotográfico de portada de la revista Inked.",
     id: 7,
-    icon: <img src={inked1} alt="icon" />,
+    icon: <img src={inked1} alt="icon" loading="lazy" />,
   },
 ];
 

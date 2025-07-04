@@ -40,6 +40,7 @@ const Meduad = () => {
             round={false}
           />
         </article>
+        
       </section>
     </>
   );

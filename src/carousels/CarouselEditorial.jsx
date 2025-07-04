@@ -2,12 +2,12 @@ import { useEffect, useState, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 // replace icons with your own if needed
 
-import triptico1Mock from "../assets/Design/editorial/triptico-1-m.jpg";
-import triptico2Mock from "../assets/Design/editorial/triptico-2-m.jpg";
-import trip1 from "../assets/Design/editorial/trip-1.1.jpg";
-import trip2 from "../assets/Design/editorial/trip-1.2.jpg";
-import trip3 from "../assets/Design/editorial/trip-2.1.jpg";
-import trip4 from "../assets/Design/editorial/trip-2.2.jpg";
+import triptico1Mock from "../assets/Design/editorial/triptico-1-m.webp";
+import triptico2Mock from "../assets/Design/editorial/triptico-2-m.webp";
+import trip1 from "../assets/Design/editorial/trip-1.1.webp";
+import trip2 from "../assets/Design/editorial/trip-1.2.webp";
+import trip3 from "../assets/Design/editorial/triptico-2.1.webp";
+import trip4 from "../assets/Design/editorial/triptico-2.2.webp";
 
 import "../Styles/_carousel.scss";
 
@@ -16,37 +16,37 @@ const DEFAULT_ITEMS = [
     title: "Diseño Editorial",
     description: "Triptico, realizado en InDesign.",
     id: 1,
-    icon: <img src={trip1} alt="Triptico" />,
+    icon: <img src={trip1} alt="Triptico" loading="lazy" />,
   },
   {
     title: "Diseño Editorial",
     description: "Tiene, sus marcas de registro, de sangrado y corte.",
     id: 2,
-    icon: <img src={trip2} alt="Triptico" />,
+    icon: <img src={trip2} alt="Triptico" loading="lazy" />,
   },
   {
     title: "Diseño Editorial",
     description: "Mockup vista externa.",
     id: 3,
-    icon: <img src={triptico1Mock} alt="Triptico" />,
+    icon: <img src={triptico1Mock} alt="Triptico" loading="lazy" />,
   },
   {
     title: "Diseño Editorial",
     description: "Triptico, realizado en InDesign.",
     id: 4,
-    icon: <img src={trip3} alt="Triptico" />,
+    icon: <img src={trip3} alt="Triptico" loading="lazy" />,
   },
   {
     title: "Diseño Editorial",
     description: "Tiene, sus marcas de registro, de sangrado y corte.",
     id: 5,
-    icon: <img src={trip4} alt="Triptico" />,
+    icon: <img src={trip4} alt="Triptico" loading="lazy" />,
   },
   {
     title: "Diseño Editorial",
     description: "Mockup vista interna.",
     id: 6,
-    icon: <img src={triptico2Mock} alt="Triptico" />,
+    icon: <img src={triptico2Mock} alt="Triptico" loading="lazy" />,
   },
 ];
 

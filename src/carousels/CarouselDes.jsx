@@ -2,14 +2,14 @@ import { useEffect, useState, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 // replace icons with your own if needed
 
-import gif1 from "../assets/Design/Diseño/gif-oci.gif";
-import bannerPre from "../assets/Design/Diseño/banner-pre.jpg";
-import bannerT from "../assets/Design/Diseño/banner-t.jpg";
+import gif1 from "../assets/Design/Diseño/gif-oci.webp";
+import bannerPre from "../assets/Design/Diseño/banner-pre.webp";
+import bannerT from "../assets/Design/Diseño/banner-t.webp";
 //import bannerTrans33 from "../assets/Design/Diseño/banner-info.jpg";
-import gifT from "../assets/Design/Diseño/gif-t.gif";
-import gifInt from "../assets/Design/Diseño/gif-int.gif";
-import bannerInf1 from "../assets/Design/Diseño/banner-info-1.jpg";
-import bannerInf2 from "../assets/Design/Diseño/banner-info-2.jpg";
+import gifT from "../assets/Design/Diseño/gif-t.webp";
+import gifInt from "../assets/Design/Diseño/gif-int.webp";
+import bannerInf1 from "../assets/Design/Diseño/banner-info-1.webp";
+import bannerInf2 from "../assets/Design/Diseño/banner-info-2.webp";
 
 import "../Styles/_carousel.scss";
 
@@ -18,43 +18,43 @@ const DEFAULT_ITEMS = [
     title: "Diseño",
     description: "Banner de promoción al Diplomado Tránsitos 33.",
     id: 1,
-    icon: <img src={bannerInf1} alt="banner" />,
+    icon: <img src={bannerInf1} alt="banner" loading="lazy" />,
   },
   {
     title: "Diseño",
     description: "Banner de promoción al Diplomado Tránsitos 33.",
     id: 2,
-    icon: <img src={bannerInf2} alt="banner" />,
+    icon: <img src={bannerInf2} alt="banner" loading="lazy" />,
   },
   {
     title: "Diseño",
     description: "Banner de promoción al Diplomado Tránsitos 33.",
     id: 3,
-    icon: <img src={bannerT} alt="banner Tránsitos" />,
+    icon: <img src={bannerT} alt="banner Tránsitos" loading="lazy" />,
   },
   {
     title: "Diseño",
     description: "Banner de pre-registro a la nueva oferta.",
     id: 4,
-    icon: <img src={bannerPre} alt="banner pre-registro" />,
+    icon: <img src={bannerPre} alt="banner pre-registro" loading="lazy" />,
   },
   {
     title: "Diseño",
     description: "Gif de actividades realizadas en los cursos OCI.",
     id: 5,
-    icon: <img src={gif1} alt="Gif OCI" />,
+    icon: <img src={gif1} alt="Gif OCI" loading="lazy" />,
   },
   {
     title: "Diseño",
     description: "Gif de actividades realizadas en los cursos Tránsitos",
     id: 6,
-    icon: <img src={gifT} alt="Gif Tránsitos" />,
+    icon: <img src={gifT} alt="Gif Tránsitos" loading="lazy" />,
   },
   {
     title: "Diseño",
     description: "Gif de actividades realizadas en los cursos Interacciones",
     id: 7,
-    icon: <img src={gifInt} alt="Gif Interacciones" />,
+    icon: <img src={gifInt} alt="Gif Interacciones" loading="lazy" />,
   },
 ];
 

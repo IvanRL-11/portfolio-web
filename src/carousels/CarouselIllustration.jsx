@@ -2,11 +2,11 @@ import { useEffect, useState, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 // replace icons with your own if needed
 
-import giraffes from "../assets/Design/ilustracion/giraffe-mix.jpg";
-import giraffesMock from "../assets/Design/ilustracion/giraffes-m.jpg";
-import hormiguta from "../assets/Design/ilustracion/hormiguita-mix.jpg";
-import hormiguitaMock from "../assets/Design/ilustracion/la-hormiguita-m.jpg";
-import mural from "../assets/Design/ilustracion/ilustracion-mural.jpg";
+import giraffes from "../assets/Design/ilustracion/giraffe-mix.webp";
+import giraffesMock from "../assets/Design/ilustracion/giraffes-m.webp";
+import hormiguta from "../assets/Design/ilustracion/hormiguita-mix.webp";
+import hormiguitaMock from "../assets/Design/ilustracion/la-hormiguita-m.webp";
+import mural from "../assets/Design/ilustracion/ilustracion-mural.webp";
 
 import "../Styles/_carousel.scss";
 
@@ -15,31 +15,31 @@ const DEFAULT_ITEMS = [
     title: "Ilustración Digital",
     description: "Ejercicio de re-edición de portada de libro infantil.",
     id: 1,
-    icon: <img src={hormiguta} alt="icon" />,
+    icon: <img src={hormiguta} alt="ilustración" loading="lazy" />,
   },
   {
     title: "Ilustración Digital",
     description: "Mockup del resultado.",
     id: 2,
-    icon: <img src={hormiguitaMock} alt="icon" />,
+    icon: <img src={hormiguitaMock} alt="ilustración" loading="lazy" />,
   },
   {
     title: "Ilustración Digital",
     description: "Ejercicio de re-edición de portada de libro infantil.",
     id: 3,
-    icon: <img src={giraffes} alt="icon" />,
+    icon: <img src={giraffes} alt="ilustración" loading="lazy" />,
   },
   {
     title: "Ilustración Digital",
     description: "Mockup del resultado.",
     id: 4,
-    icon: <img src={giraffesMock} alt="icon" />,
+    icon: <img src={giraffesMock} alt="ilustración" loading="lazy" />,
   },
   {
     title: "Ilustración Digital",
     description: "Ilustración a gran escala como propuesta de mural.",
     id: 5,
-    icon: <img src={mural} alt="icon" />,
+    icon: <img src={mural} alt="ilustración" loading="lazy" />,
   },
 ];
 

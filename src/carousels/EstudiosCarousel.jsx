@@ -2,25 +2,35 @@ import { useEffect, useState, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 // replace icons with your own if needed
 
-import paletaOci from '../assets/estudios_inter/paleta-oci.jpg';
-import paletaTrans from '../assets/estudios_inter/paleta-transitos.jpg';
+import paletaOci from "../assets/estudios_inter/paleta-oci.webp";
+import paletaTrans from "../assets/estudios_inter/paleta-transitos.webp";
 
 import "../Styles/_carousel.scss";
 
 const DEFAULT_ITEMS = [
   {
     title: "Paleta Cromatica Tránsitos",
-    description:
-      "",
+    description: "",
     id: 1,
-    icon: <img src={paletaTrans} alt="Paleta de colores de sitio web Tránsitos" />,
+    icon: (
+      <img
+        src={paletaTrans}
+        alt="Paleta de colores de sitio web Tránsitos"
+        loading="lazy"
+      />
+    ),
   },
   {
     title: "Paleta Cromatica OCI",
-    description:
-      "",
+    description: "",
     id: 2,
-    icon: <img src={paletaOci} alt="Paleta de colores de sitio web OCI" />,
+    icon: (
+      <img
+        src={paletaOci}
+        alt="Paleta de colores de sitio web OCI"
+        loading="lazy"
+      />
+    ),
   },
 ];
 

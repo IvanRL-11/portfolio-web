@@ -2,33 +2,36 @@ import { useEffect, useState, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 // replace icons with your own if needed
 
-import transitos1 from "../assets/dda/transitos-1.jpg";
-import transitos2 from "../assets/dda/transitos-2.jpg";
-import transitos3 from "../assets/dda/transitos-3.jpg";
+import transitos1 from "../assets/dda/transitos-1.webp";
+import transitos2 from "../assets/dda/transitos-2.webp";
+import transitos3 from "../assets/dda/transitos-3.webp";
 
 import "../Styles/_carousel.scss";
 
 const DEFAULT_ITEMS = [
   {
     title: "Propuesta UX",
-    description:
-      "",
+    description: "",
     id: 1,
-    icon: <img src={transitos1} alt="Propuesta ux para sitio DDA" />,
+    icon: (
+      <img src={transitos1} alt="Propuesta ux para sitio DDA" loading="lazy" />
+    ),
   },
   {
     title: "Propuesta UX",
-    description:
-      "",
+    description: "",
     id: 2,
-    icon: <img src={transitos2} alt="Propuesta ux para sitio DDA" />,
+    icon: (
+      <img src={transitos2} alt="Propuesta ux para sitio DDA" loading="lazy" />
+    ),
   },
   {
     title: "Propuesta UX",
-    description:
-      "",
+    description: "",
     id: 3,
-    icon: <img src={transitos3} alt="Propuesta ux para sitio DDA" />,
+    icon: (
+      <img src={transitos3} alt="Propuesta ux para sitio DDA" loading="lazy" />
+    ),
   },
 ];
 

@@ -1,4 +1,4 @@
-import avatarFinal from "../assets/avatar-min.jpg";
+import avatarFinal from "../assets/avatar.webp";
 import "../Styles/Particles.css";
 
 const Hero = () => {
