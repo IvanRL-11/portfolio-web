@@ -3,13 +3,12 @@ import { motion, useMotionValue, useTransform } from "framer-motion";
 // replace icons with your own if needed
 
 import gif1 from "../assets/Design/Diseño/gif-oci.webp";
-import bannerPre from "../assets/Design/Diseño/banner-pre.webp";
-import bannerT from "../assets/Design/Diseño/banner-t.webp";
-//import bannerTrans33 from "../assets/Design/Diseño/banner-info.jpg";
+import bannerPre from "../assets/Design/Diseño/bannerPre.webp";
+import bannerT from "../assets/Design/Diseño/bannerTr.webp";
 import gifT from "../assets/Design/Diseño/gif-t.webp";
 import gifInt from "../assets/Design/Diseño/gif-int.webp";
-import bannerInf1 from "../assets/Design/Diseño/banner-info-1.webp";
-import bannerInf2 from "../assets/Design/Diseño/banner-info-2.webp";
+import bannerInf1 from "../assets/Design/Diseño/banner-inf-1.webp";
+import bannerInf2 from "../assets/Design/Diseño/banner-inf-2.webp";
 
 import "../Styles/_carousel.scss";
 
