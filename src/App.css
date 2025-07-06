@@ -494,6 +494,7 @@ body {
   border-radius: 5px;
   padding: 5px 10px;
   cursor: pointer;
+  transition: all 0.2s ease-in-out !important;
 }
 .btn-ver-mas a {
   font-family: "Inter", sans-serif;
@@ -750,6 +751,7 @@ h2 {
   font-size: 18px;
   color: #ffffff;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 .contact input[type=submit]:hover {
   background-color: #00cc66;
