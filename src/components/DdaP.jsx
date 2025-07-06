@@ -22,7 +22,7 @@ const DdaP = () => {
           <DDACarousel
             baseWidth={330}
             autoplay={true}
-            autoplayDelay={3000}
+            autoplayDelay={5000}
             pauseOnHover={true}
             loop={true}
             round={false}

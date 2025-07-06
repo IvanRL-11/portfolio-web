@@ -13,7 +13,7 @@ const DesignProjects = () => {
         <CarouselDes
           baseWidth={330}
           autoplay={true}
-          autoplayDelay={3000}
+          autoplayDelay={5000}
           pauseOnHover={true}
           loop={true}
           round={false}
@@ -21,7 +21,7 @@ const DesignProjects = () => {
         <CarouselPhoto
           baseWidth={330}
           autoplay={true}
-          autoplayDelay={3000}
+          autoplayDelay={5000}
           pauseOnHover={true}
           loop={true}
           round={false}
@@ -30,7 +30,7 @@ const DesignProjects = () => {
         <CarouselIllustration
           baseWidth={330}
           autoplay={true}
-          autoplayDelay={3000}
+          autoplayDelay={5000}
           pauseOnHover={true}
           loop={true}
           round={false}
@@ -38,7 +38,7 @@ const DesignProjects = () => {
         <CarouselEditorial
           baseWidth={330}
           autoplay={true}
-          autoplayDelay={3000}
+          autoplayDelay={5000}
           pauseOnHover={true}
           loop={true}
           round={false}
@@ -46,7 +46,7 @@ const DesignProjects = () => {
         <CarouselAnimation
           baseWidth={330}
           autoplay={false}
-          autoplayDelay={3000}
+          autoplayDelay={5000}
           pauseOnHover={true}
           loop={true}
           round={false}
@@ -54,7 +54,7 @@ const DesignProjects = () => {
         <CarouselVideo
           baseWidth={330}
           autoplay={true}
-          autoplayDelay={3000}
+          autoplayDelay={5000}
           pauseOnHover={true}
           loop={true}
           round={false}

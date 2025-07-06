@@ -24,7 +24,6 @@ const EstudiosIntWebs = () => {
           >
             Sitio web OCI
           </a>
-          <br />
           <a href="https://diplomadotransitos.cenart.gob.mx/" target="_blank">
             Sitio web TRÁNSITOS
           </a>
@@ -33,7 +32,7 @@ const EstudiosIntWebs = () => {
           <EstudiosCarousel
             baseWidth={330}
             autoplay={true}
-            autoplayDelay={3000}
+            autoplayDelay={5000}
             pauseOnHover={true}
             loop={true}
             round={false}

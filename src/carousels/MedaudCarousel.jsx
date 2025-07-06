@@ -17,7 +17,7 @@ import "../Styles/_carousel.scss";
 const DEFAULT_ITEMS = [
   {
     title: "Mockup",
-    description: "Diseño del sitio web, página princiapl",
+    description: "Diseño del sitio web, página principal",
     id: 1,
     icon: <img src={index} alt="Index Medaud" loading="lazy" />,
   },
