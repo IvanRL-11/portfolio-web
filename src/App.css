@@ -924,6 +924,8 @@ h2 {
 .web-project {
   display: flex;
   gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 .web-project article {
   display: flex;
@@ -951,11 +953,6 @@ h2 {
 }
 .web-project a:hover {
   background-color: #00cc66;
-}
-.web-project a .Carousles-webP {
-  display: inherit;
-  justify-content: center;
-  align-items: center;
 }
 .web-project a .Carousles-webP img {
   border-radius: 0;

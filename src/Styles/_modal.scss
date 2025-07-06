@@ -54,6 +54,8 @@
 .web-project {
   display: flex;
   gap: 10px;
+  justify-content: center;
+  align-items: center;
   //border: thin solid red;
 
   article{
@@ -88,11 +90,7 @@
     }
 
     .Carousles-webP {
-      display: inherit;
-      justify-content: center;
-      align-items: center;
       // border: thin solid red;
-      // padding: 0;
 
       img {
         border-radius: 0;
