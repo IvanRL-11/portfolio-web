@@ -18,7 +18,7 @@ const EstudiosIntWebs = () => {
             reorganización del contenido desde el panel de administración, y
             ajustes en el layout a nivel de código y plantilla.
           </p>
-          <a
+          {/* <a
             href="https://ofertacurricularinter.cenart.gob.mx/"
             target="_blank"
           >
@@ -26,7 +26,7 @@ const EstudiosIntWebs = () => {
           </a>
           <a href="https://diplomadotransitos.cenart.gob.mx/" target="_blank">
             Sitio web TRÁNSITOS
-          </a>
+          </a> */}
         </article>
         <article className="Carousles-webP">
           <EstudiosCarousel

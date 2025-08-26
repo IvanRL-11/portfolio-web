@@ -1,14 +1,17 @@
 import { useEffect, useState, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
-// replace icons with your own if needed
 
-import gif1 from "../assets/Design/Diseño/gif-oci.webp";
-import bannerPre from "../assets/Design/Diseño/bannerPre.webp";
+//import gif1 from "../assets/Design/Diseño/gif-oci.webp";
+//import bannerPre from "../assets/Design/Diseño/bannerPre.webp";
 import bannerT from "../assets/Design/Diseño/bannerTr.webp";
 import gifT from "../assets/Design/Diseño/gif-t.webp";
-import gifInt from "../assets/Design/Diseño/gif-int.webp";
+//import gifInt from "../assets/Design/Diseño/gif-int.webp";
 import bannerInf1 from "../assets/Design/Diseño/banner-inf-1.webp";
 import bannerInf2 from "../assets/Design/Diseño/banner-inf-2.webp";
+import posterCopa from "../assets/Design/Diseño/PosterCOPA.webp";
+//import postercvo1 from '../assets/Design/Diseño/PosterCVO-1.webp';
+import postercvo2 from "../assets/Design/Diseño/PosterCVO-2.webp";
+import thewarning from "../assets/Design/Diseño/TWarning.webp";
 
 import "../Styles/_carousel.scss";
 
@@ -33,27 +36,47 @@ const DEFAULT_ITEMS = [
   },
   {
     title: "Diseño",
-    description: "Banner de pre-registro a la nueva oferta.",
-    id: 4,
-    icon: <img src={bannerPre} alt="banner pre-registro" loading="lazy" />,
-  },
-  {
-    title: "Diseño",
-    description: "Gif de actividades realizadas en los cursos OCI.",
-    id: 5,
-    icon: <img src={gif1} alt="Gif OCI" loading="lazy" />,
-  },
-  {
-    title: "Diseño",
     description: "Gif de actividades realizadas en los cursos Tránsitos",
-    id: 6,
+    id: 4,
     icon: <img src={gifT} alt="Gif Tránsitos" loading="lazy" />,
   },
   {
     title: "Diseño",
-    description: "Gif de actividades realizadas en los cursos Interacciones",
+    description: "Poster Deportivo, Copa NOTIAUTO México",
+    id: 5,
+    icon: (
+      <img
+        src={posterCopa}
+        alt="Poster deportivo, de la Copa NOTIAUTO en el Autodromo Hermanos Rodriguez"
+        loading="lazy"
+      />
+    ),
+  },
+  {
+    title: "Diseño",
+    description: "Poster para Óptica",
+    id: 6,
+    icon: (
+      <img
+        src={postercvo2}
+        alt="Propuesta de Poster para óptica"
+        loading="lazy"
+        className="poster-img" //Imagen vertical
+      />
+    ),
+  },
+  {
+    title: "Diseño",
+    description: "Poster de la banda The Warning, estilo brutalismo",
     id: 7,
-    icon: <img src={gifInt} alt="Gif Interacciones" loading="lazy" />,
+    icon: (
+      <img
+        src={thewarning}
+        alt="Poster de la Banda The Warning en estilo brutalismo"
+        loading="lazy"
+        className="poster-img" //Imagen vertical
+      />
+    ),
   },
 ];
 

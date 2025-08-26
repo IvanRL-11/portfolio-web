@@ -3,10 +3,10 @@ import { motion, useMotionValue, useTransform } from "framer-motion";
 // replace icons with your own if needed
 
 import index from "../assets/medaud/index.webp";
-import quienes from "../assets/medaud/quienes-s.webp";
+//import quienes from "../assets/medaud/quienes-s.webp";
 import proyectos from "../assets/medaud/proyectos.webp";
 import proyecto from "../assets/medaud/proyecto.webp";
-import modulos from "../assets/medaud/modulo.webp";
+//import modulos from "../assets/medaud/modulo.webp";
 import miembros from "../assets/medaud/miembros.webp";
 import uiKit from "../assets/medaud/ui-kit-1.webp";
 import uiKit2 from "../assets/medaud/ui-kit-2.webp";
@@ -23,50 +23,38 @@ const DEFAULT_ITEMS = [
   },
   {
     title: "Mockup",
-    description: "Diseño de sección, ¿Quiénes somos?",
-    id: 2,
-    icon: <img src={quienes} alt="Quienes somos Medaud" loading="lazy" />,
-  },
-  {
-    title: "Mockup",
     description: "Diseño de sección, Proyectos",
-    id: 3,
+    id: 2,
     icon: <img src={proyectos} alt="Proyectos Medaud" loading="lazy" />,
   },
   {
     title: "Mockup",
     description: "Diseño de proyecto seleccionado",
-    id: 4,
+    id: 3,
     icon: <img src={proyecto} alt="Proyecto Medaud" loading="lazy" />,
   },
   {
     title: "Mockup",
-    description: "Diseño de sección, Módulos",
-    id: 5,
-    icon: <img src={modulos} alt="Modulos Medaud" loading="lazy" />,
-  },
-  {
-    title: "Mockup",
     description: "Diseño de sección, Miembros",
-    id: 6,
+    id: 4,
     icon: <img src={miembros} alt="Miembros Medaud" loading="lazy" />,
   },
   {
     title: "UI Kit",
     description: "",
-    id: 7,
+    id: 5,
     icon: <img src={uiKit} alt="Ui Kit Medaud" loading="lazy" />,
   },
   {
     title: "UI Kit",
     description: "",
-    id: 8,
+    id: 6,
     icon: <img src={uiKit2} alt="Ui Kit Medaud" loading="lazy" />,
   },
   {
     title: "UI Kit",
     description: "",
-    id: 9,
+    id: 7,
     icon: <img src={tipografia} alt="Ui Kit Medaud" loading="lazy" />,
   },
 ];
