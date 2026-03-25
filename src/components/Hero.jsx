@@ -14,11 +14,7 @@ const Hero = () => {
             <br /> Diseñador de la Comunicación Gráfica
           </h1>
           <p>
-            Tengo pasión por el Diseño y Desarrollo Web, en cada proyecto busco
-            integrar soluciones visuales y funcionales mediante el uso de
-            herramientas de diseño y tecnologías web. También tengo conocimiento
-            en medios audiovisuales, lo que me permite abordar los proyectos con
-            un enfoque narrativo, estético y multidisciplinario.
+            Diseñador enfocado en la creación de experiencias digitales claras y funcionales. Integro principios de usabilidad y diseño visual, complementando mi trabajo con conocimientos en desarrollo frontend.
           </p>
         </div>
       </section>

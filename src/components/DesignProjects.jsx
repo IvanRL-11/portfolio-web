@@ -1,4 +1,5 @@
 import CarouselDes from "../carousels/CarouselDes";
+import CarouselFlyers from "../carousels/CarouselFlyers";
 import CarouselPhoto from "../carousels/CarouselPhoto";
 import CarouselIllustration from "../carousels/CarouselIllustration";
 import CarouselEditorial from "../carousels/CarouselEditorial";
@@ -11,6 +12,14 @@ const DesignProjects = () => {
       <h3 className="sub-title-sec">Diseño Gráfico</h3>
       <section className="design-p">
         <CarouselDes
+          baseWidth={330}
+          autoplay={true}
+          autoplayDelay={5000}
+          pauseOnHover={true}
+          loop={true}
+          round={false}
+        />
+        <CarouselFlyers
           baseWidth={330}
           autoplay={true}
           autoplayDelay={5000}

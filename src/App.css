@@ -145,8 +145,7 @@ body {
   padding: 20px 50px;
   margin: 20px 40px 0 40px;
   z-index: 100;
-  -webkit-backdrop-filter: blur(0.3rem);
-          backdrop-filter: blur(0.3rem);
+  backdrop-filter: blur(0.3rem);
   position: relative;
 }
 .menu-nav .logo {
@@ -268,8 +267,7 @@ body {
     align-items: center;
     padding: 20px 50px;
     z-index: 100;
-    -webkit-backdrop-filter: blur(0.5rem);
-            backdrop-filter: blur(0.5rem);
+    backdrop-filter: blur(0.5rem);
     position: relative;
     margin: 0;
     border: 0;
@@ -340,13 +338,13 @@ body {
 .info-p {
   position: inherit;
   z-index: inherit;
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
 }
 .info-p h1 {
   font-family: "Space Grotesk", sans-serif;
   font-size: 38px;
   color: #00ff88;
+  padding-bottom: 15px;
 }
 .info-p p {
   font-family: "Inter", sans-serif;
@@ -632,6 +630,12 @@ h2 {
      object-fit: cover;
   display: block;
 }
+.carousel-icon-container .vertical-c {
+  height: auto !important; /* o el valor que quieras */
+  width: auto !important; /* así se adapta la proporción */
+  -o-object-fit: cover !important;
+     object-fit: cover !important; /* recorta en vez de deformar */
+}
 
 .carousel-icon-container-horiz {
   display: flex;
@@ -647,6 +651,12 @@ h2 {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
+}
+.carousel-icon-container-horiz .poster-img {
+  height: 100%; /* o el valor que quieras */
+  width: auto; /* así se adapta la proporción */
+  -o-object-fit: cover;
+     object-fit: cover; /* recorta en vez de deformar */
 }
 
 .carousel-item-content {

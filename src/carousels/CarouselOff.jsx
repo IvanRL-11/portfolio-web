@@ -1,88 +1,65 @@
 import { useEffect, useState, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
+// replace icons with your own if needed
 
-//import gif1 from "../assets/Design/Diseño/gif-oci.webp";
-//import bannerPre from "../assets/Design/Diseño/bannerPre.webp";
-//import bannerT from "../assets/Design/Diseño/bannerTr.webp";
-//import gifT from "../assets/Design/Diseño/gif-t.webp";
-//import gifInt from "../assets/Design/Diseño/gif-int.webp";
-//import bannerInf1 from "../assets/Design/Diseño/banner-inf-1.webp";
-//import bannerInf2 from "../assets/Design/Diseño/banner-inf-2.webp";
-//import posterCopa from "../assets/Design/Diseño/PosterCOPA.webp";
-//import postercvo1 from '../assets/Design/Diseño/PosterCVO-1.webp';
-import cvo1 from "../assets/Design/Diseño/PosterCVO-1.webp";
-import cvo2 from "../assets/Design/Diseño/PosterCVO-2.webp";
-import cvo3 from "../assets/Design/Diseño/cvo-3.webp";
-import gifCvo from "../assets/Design/Diseño/gif-cvo.webp";
-import thewarning from "../assets/Design/Diseño/TWarning.webp";
+/*import c2 from "../assets/off/C2.webp";
+import c1 from "../assets/off/C1.webp";
+import c3 from "../assets/off/C3.webp";
+import c4 from "../assets/off/C4.webp";*/
+import d1 from "../assets/off/D1.webp";
+import d2 from "../assets/off/D2.webp";
+import d3 from "../assets/off/D3.webp";
+import d4 from "../assets/off/D4.webp";
+import ui1 from "../assets/off/ui-k-1.webp";
+import ui2 from "../assets/off/ui-k-2.webp";
+import ui3 from "../assets/off/ui-k-3.webp";
+
 
 import "../Styles/_carousel.scss";
 
 const DEFAULT_ITEMS = [
   {
-    title: "Diseño",
-    description: "Poster publicitario para Óptica",
+    title: "Mockup",
+    description: "Diseño del juego, página principal",
     id: 1,
-    icon: (
-      <img
-        src={cvo1}
-        alt="Propuesta de Poster para óptica"
-        loading="lazy"
-        className="poster-img" //Imagen vertical
-      />
-    ),
+    icon: <img src={d1} alt="Inicio Memorama" loading="lazy" />,
   },
   {
-    title: "Diseño",
-    description: "Poster publicitario para Óptica",
+    title: "Mockup",
+    description: "Diseño de juego, cartas",
     id: 2,
-    icon: (
-      <img
-        src={cvo2}
-        alt="Propuesta de Poster para óptica"
-        loading="lazy"
-        className="poster-img" //Imagen vertical
-      />
-    ),
+    icon: <img src={d2} alt="Cartas" loading="lazy" />,
   },
   {
-    title: "Diseño",
-    description: "Poster publicitario para Óptica",
+    title: "Mockup",
+    description: "Diseño de juego, cartas correctas",
     id: 3,
-    icon: (
-      <img
-        src={cvo3}
-        alt="Propuesta de Poster para óptica"
-        loading="lazy"
-        //className="poster-img" //Imagen vertical
-      />
-    ),
+    icon: <img src={d3} alt="Cartas Correctas" loading="lazy" />,
   },
   {
-    title: "Diseño",
-    description: "Gif publicitario para Óptica",
+    title: "Mockup",
+    description: "Diseño final del juego",
     id: 4,
-    icon: (
-      <img
-        src={gifCvo}
-        alt="Propuesta de gif para óptica"
-        loading="lazy"
-        className="poster-img" //Imagen vertical
-      />
-    ),
+    icon: <img src={d4} alt="Final juego" loading="lazy" />,
   },
   {
-    title: "Diseño",
-    description: "Poster de la banda The Warning, estilo brutalismo",
+    title: "UI Kit",
+    description: "",
     id: 5,
-    icon: (
-      <img
-        src={thewarning}
-        alt="Poster de la Banda The Warning en estilo brutalismo"
-        loading="lazy"
-        className="poster-img" //Imagen vertical
-      />
-    ),
+    icon: <img src={ui1} alt="Ui Kit Medaud" loading="lazy" className="vertical-c"
+    />,
+  },
+  {
+    title: "UI Kit",
+    description: "",
+    id: 6,
+    icon: <img src={ui2} alt="Ui Kit Medaud" loading="lazy" />,
+  },
+  {
+    title: "UI Kit",
+    description: "",
+    id: 7,
+    icon: <img src={ui3} alt="Ui Kit Medaud" loading="lazy" />,
   },
 ];
 
@@ -91,7 +68,7 @@ const VELOCITY_THRESHOLD = 500;
 const GAP = 16;
 const SPRING_OPTIONS = { type: "spring", stiffness: 300, damping: 30 };
 
-export default function CarouselDes({
+export default function MedaudCarousel({
   items = DEFAULT_ITEMS,
   baseWidth = 300,
   autoplay = false,
@@ -237,9 +214,7 @@ export default function CarouselDes({
               transition={effectiveTransition}
             >
               <div className={`carousel-item-header ${round ? "round" : ""}`}>
-                <span className="carousel-icon-container-horiz">
-                  {item.icon}
-                </span>
+                <span className="carousel-icon-container">{item.icon}</span>
               </div>
               <div className="carousel-item-content">
                 <div className="carousel-item-title">{item.title}</div>

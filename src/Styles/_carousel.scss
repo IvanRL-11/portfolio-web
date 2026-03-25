@@ -99,6 +99,12 @@
     object-fit: cover;
     display: block;
   }
+
+  .vertical-c {
+    height: auto !important; /* o el valor que quieras */
+    width: auto !important; /* así se adapta la proporción */
+    object-fit: cover !important; /* recorta en vez de deformar */
+  }
 }
 
 .carousel-icon-container-horiz {

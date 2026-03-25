@@ -1,17 +1,20 @@
 import medaud from "../assets/Mockups/medaud.webp";
 import dda from "../assets/Mockups/dda.webp";
 import transi from "../assets/Mockups/transitos.webp";
+import off from "../assets/Mockups/OFF!.webp";
 //Modal - Ventana Emergente
 import ModalWebP from "./ModalWebP";
 import { useModal } from "../hooks/useModal";
 import MeduadP from "./MeduadP";
 import DdaP from "./DdaP";
 import EstudiosIntWebs from "./EstudiosIntWebs";
+import OffGame from "./OffGame";
 
 const WebProyects = () => {
   const [isOpenModalMed, openModalMed, closeModalMed] = useModal(false);
   const [isOpenModalDDA, openModalDDA, closeModalDDA] = useModal(false);
   const [isOpenModalEsInt, openModalEsInt, closeModalEsInt] = useModal(false);
+  const [isOpenModalOff, openModalOff, closeModalOff] = useModal(false);
 
   return (
     <>
@@ -60,6 +63,20 @@ const WebProyects = () => {
           <ModalWebP isOpen={isOpenModalEsInt} closeModal={closeModalEsInt}>
             <h2>Diplomado Tránsitos & <br />Ofeta Curricular Interdisciplinaria</h2>
             <EstudiosIntWebs />
+          </ModalWebP>
+        </div>
+        <div className="card-web">
+          <img src={off} alt="OFF! Game" loading="lazy" />
+          <h4 className="title-card">OFF!</h4>
+          <p className="description">
+            Propuesta UI para juego memorama de los productos de la marca OFF!.
+          </p>
+          <button className="btn-ver-mas" onClick={openModalOff}>
+            <a>Ver más</a>
+          </button>
+          <ModalWebP isOpen={isOpenModalOff} closeModal={closeModalOff}>
+            <h2>OFF!</h2>
+            <OffGame />
           </ModalWebP>
         </div>
       </section>

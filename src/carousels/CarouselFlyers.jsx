@@ -1,86 +1,76 @@
 import { useEffect, useState, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 
-//import gif1 from "../assets/Design/Diseño/gif-oci.webp";
-//import bannerPre from "../assets/Design/Diseño/bannerPre.webp";
-//import bannerT from "../assets/Design/Diseño/bannerTr.webp";
-//import gifT from "../assets/Design/Diseño/gif-t.webp";
-//import gifInt from "../assets/Design/Diseño/gif-int.webp";
-//import bannerInf1 from "../assets/Design/Diseño/banner-inf-1.webp";
-//import bannerInf2 from "../assets/Design/Diseño/banner-inf-2.webp";
-//import posterCopa from "../assets/Design/Diseño/PosterCOPA.webp";
-//import postercvo1 from '../assets/Design/Diseño/PosterCVO-1.webp';
-import cvo1 from "../assets/Design/Diseño/PosterCVO-1.webp";
-import cvo2 from "../assets/Design/Diseño/PosterCVO-2.webp";
-import cvo3 from "../assets/Design/Diseño/cvo-3.webp";
-import gifCvo from "../assets/Design/Diseño/gif-cvo.webp";
-import thewarning from "../assets/Design/Diseño/TWarning.webp";
+import copa from "../assets/Design/Diseño/PosterCopa.webp";
+import charles from "../assets/Design/Diseño/charles-f1.webp";
+import max from "../assets/Design/Diseño/max-f1.webp";
+import checo from "../assets/Design/Diseño/checo-f1.webp";
+import oscar from "../assets/Design/Diseño/PosterF1.webp";
 
 import "../Styles/_carousel.scss";
 
 const DEFAULT_ITEMS = [
   {
-    title: "Diseño",
-    description: "Poster publicitario para Óptica",
+    title: "Flyer Deportivo",
+    description: "Flyer deportivo, realizado en Photoshop",
     id: 1,
     icon: (
       <img
-        src={cvo1}
-        alt="Propuesta de Poster para óptica"
+        src={charles}
+        alt="Flyer Charles F1"
         loading="lazy"
         className="poster-img" //Imagen vertical
       />
     ),
   },
   {
-    title: "Diseño",
-    description: "Poster publicitario para Óptica",
+    title: "Flyer Deportivo",
+    description: "Flyer deportivo, realizado en Photoshop",
     id: 2,
     icon: (
       <img
-        src={cvo2}
-        alt="Propuesta de Poster para óptica"
+        src={max}
+        alt="Flyer Max F1"
         loading="lazy"
         className="poster-img" //Imagen vertical
       />
     ),
   },
   {
-    title: "Diseño",
-    description: "Poster publicitario para Óptica",
+    title: "Flyer Deportivo",
+    description: "Flyer deportivo, realizado en Photoshop",
     id: 3,
     icon: (
       <img
-        src={cvo3}
-        alt="Propuesta de Poster para óptica"
+        src={oscar}
+        alt="Flyer Oscar F1"
         loading="lazy"
-        //className="poster-img" //Imagen vertical
+        className="poster-img" //Imagen vertical
       />
     ),
   },
   {
-    title: "Diseño",
-    description: "Gif publicitario para Óptica",
+    title: "Flyer Deportivo",
+    description: "Flyer deportivo, realizado en Photoshop",
     id: 4,
     icon: (
       <img
-        src={gifCvo}
-        alt="Propuesta de gif para óptica"
+        src={checo}
+        alt="Flyer Checo F1"
         loading="lazy"
         className="poster-img" //Imagen vertical
       />
     ),
   },
   {
-    title: "Diseño",
-    description: "Poster de la banda The Warning, estilo brutalismo",
+    title: "Flyer Deportivo",
+    description: "Poster Deportivo, Copa NOTIAUTO México",
     id: 5,
     icon: (
       <img
-        src={thewarning}
-        alt="Poster de la Banda The Warning en estilo brutalismo"
+        src={copa}
+        alt="Poster deportivo, de la Copa NOTIAUTO en el Autodromo Hermanos Rodriguez"
         loading="lazy"
-        className="poster-img" //Imagen vertical
       />
     ),
   },
