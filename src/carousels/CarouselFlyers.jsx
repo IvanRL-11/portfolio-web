@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 
-import copa from "../assets/Design/Diseño/PosterCopa.webp";
+import copa from "../assets/Design/Diseño/PosterCOPA.webp";
 import charles from "../assets/Design/Diseño/charles-f1.webp";
 import max from "../assets/Design/Diseño/max-f1.webp";
 import checo from "../assets/Design/Diseño/checo-f1.webp";
