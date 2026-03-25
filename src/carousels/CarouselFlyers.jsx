@@ -17,7 +17,7 @@ const DEFAULT_ITEMS = [
     icon: (
       <img
         src={charles}
-        alt="Flyer Charles F1"
+        alt="Flyer Charles Leclerc F1"
         loading="lazy"
         className="poster-img" //Imagen vertical
       />
@@ -30,7 +30,7 @@ const DEFAULT_ITEMS = [
     icon: (
       <img
         src={max}
-        alt="Flyer Max F1"
+        alt="Flyer Max Emilian F1"
         loading="lazy"
         className="poster-img" //Imagen vertical
       />

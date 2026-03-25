@@ -8,8 +8,7 @@ import { motion, useMotionValue, useTransform } from "framer-motion";
 //import gifInt from "../assets/Design/Diseño/gif-int.webp";
 //import bannerInf1 from "../assets/Design/Diseño/banner-inf-1.webp";
 //import bannerInf2 from "../assets/Design/Diseño/banner-inf-2.webp";
-//import posterCopa from "../assets/Design/Diseño/PosterCOPA.webp";
-//import postercvo1 from '../assets/Design/Diseño/PosterCVO-1.webp';
+
 import cvo1 from "../assets/Design/Diseño/PosterCVO-1.webp";
 import cvo2 from "../assets/Design/Diseño/PosterCVO-2.webp";
 import cvo3 from "../assets/Design/Diseño/cvo-3.webp";

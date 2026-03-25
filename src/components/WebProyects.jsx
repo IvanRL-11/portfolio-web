@@ -36,6 +36,21 @@ const WebProyects = () => {
           </ModalWebP>
         </div>
         <div className="card-web">
+          <img src={off} alt="OFF! Game" loading="lazy" />
+          <h4 className="title-card">OFF!</h4>
+          <p className="description">
+            Propuesta UI para juego memorama de los productos de la marca OFF!.
+            Realizado en Figma.
+          </p>
+          <button className="btn-ver-mas" onClick={openModalOff}>
+            <a>Ver más</a>
+          </button>
+          <ModalWebP isOpen={isOpenModalOff} closeModal={closeModalOff}>
+            <h2>OFF!</h2>
+            <OffGame />
+          </ModalWebP>
+        </div>
+        <div className="card-web">
           <img src={dda} alt="Medaud Web site" loading="lazy" />
           <h4 className="title-card">DDA</h4>
           <p className="description">
@@ -61,22 +76,11 @@ const WebProyects = () => {
             <a>Ver más</a>
           </button>
           <ModalWebP isOpen={isOpenModalEsInt} closeModal={closeModalEsInt}>
-            <h2>Diplomado Tránsitos & <br />Ofeta Curricular Interdisciplinaria</h2>
+            <h2>
+              Diplomado Tránsitos & <br />
+              Ofeta Curricular Interdisciplinaria
+            </h2>
             <EstudiosIntWebs />
-          </ModalWebP>
-        </div>
-        <div className="card-web">
-          <img src={off} alt="OFF! Game" loading="lazy" />
-          <h4 className="title-card">OFF!</h4>
-          <p className="description">
-            Propuesta UI para juego memorama de los productos de la marca OFF!.
-          </p>
-          <button className="btn-ver-mas" onClick={openModalOff}>
-            <a>Ver más</a>
-          </button>
-          <ModalWebP isOpen={isOpenModalOff} closeModal={closeModalOff}>
-            <h2>OFF!</h2>
-            <OffGame />
           </ModalWebP>
         </div>
       </section>
