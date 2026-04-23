@@ -1,99 +1,50 @@
 import { useEffect, useState, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
+// replace icons with your own if needed
 
-//import gif1 from "../assets/Design/Diseño/gif-oci.webp";
-//import bannerPre from "../assets/Design/Diseño/bannerPre.webp";
-//import bannerT from "../assets/Design/Diseño/bannerTr.webp";
-//import gifT from "../assets/Design/Diseño/gif-t.webp";
-//import gifInt from "../assets/Design/Diseño/gif-int.webp";
-//import bannerInf1 from "../assets/Design/Diseño/banner-inf-1.webp";
-//import bannerInf2 from "../assets/Design/Diseño/banner-inf-2.webp";
-
-import cvo1 from "../assets/Design/Diseño/PosterCVO-1.webp";
-import cvo2 from "../assets/Design/Diseño/PosterCVO-2.webp";
-import cvo3 from "../assets/Design/Diseño/cvo-3.webp";
-import gifCvo from "../assets/Design/Diseño/gif-cvo.webp";
-import thewarning from "../assets/Design/Diseño/TWarning.webp";
-import jeep from "../assets/Design/Diseño/cherokee.webp";
+import home from "../assets/app/home.webp";
+import analisis from "../assets/app/analisis.webp";
+import conf from "../assets/app/conf.webp";
+import habits from "../assets/app/conf-hab.webp";
+import add from "../assets/app/add.webp";
 
 import "../Styles/_carousel.scss";
 
 const DEFAULT_ITEMS = [
   {
-    title: "Diseño",
-    description: "Poster publicitario para Óptica",
+    title: "Wireframe",
+    description: "Dashboard App",
     id: 1,
-    icon: (
-      <img
-        src={cvo1}
-        alt="Propuesta de Poster para óptica"
-        loading="lazy"
-        className="poster-img" //Imagen vertical
-      />
-    ),
+    icon: <img src={home} alt="Home" loading="lazy" />,
   },
   {
-    title: "Diseño",
-    description: "Poster publicitario para Óptica",
+    title: "Wireframe",
+    description: "Agregar hábito",
     id: 2,
-    icon: (
-      <img
-        src={cvo2}
-        alt="Propuesta de Poster para óptica"
-        loading="lazy"
-        className="poster-img" //Imagen vertical
-      />
-    ),
+    icon: <img src={add} alt="Add" loading="lazy" />,
   },
   {
-    title: "Diseño",
-    description: "Poster publicitario para Óptica",
+    title: "Wireframe",
+    description: "Configurar hábito",
     id: 3,
-    icon: (
-      <img
-        src={cvo3}
-        alt="Propuesta de Poster para óptica"
-        loading="lazy"
-        //className="poster-img" //Imagen vertical
-      />
-    ),
+    icon: <img src={habits} alt="Configurar hábito" loading="lazy" />,
   },
   {
-    title: "Diseño",
-    description: "Gif publicitario para Óptica",
+    title: "Wireframe",
+    description: "Análisis",
     id: 4,
-    icon: (
-      <img
-        src={gifCvo}
-        alt="Propuesta de gif para óptica"
-        loading="lazy"
-        className="poster-img" //Imagen vertical
-      />
-    ),
+    icon: <img src={analisis} alt="Análisis " loading="lazy" />,
   },
   {
-    title: "Diseño",
-    description: "Poster de la banda The Warning, estilo brutalismo",
+    title: "Wireframe",
+    description: "Configuración de la App",
     id: 5,
     icon: (
       <img
-        src={thewarning}
-        alt="Poster de la Banda The Warning en estilo brutalismo"
+        src={conf}
+        alt="Configuración básica"
         loading="lazy"
-        className="poster-img" //Imagen vertical
-      />
-    ),
-  },
-  {
-    title: "Diseño",
-    description: "Poster publicitario Cherokee Jeep",
-    id: 6,
-    icon: (
-      <img
-        src={jeep}
-        alt="Flyer publicitario Cherokee Jeep"
-        loading="lazy"
-        //className="poster-img" //Imagen vertical
+        //className="vertical-c"
       />
     ),
   },
@@ -104,7 +55,7 @@ const VELOCITY_THRESHOLD = 500;
 const GAP = 16;
 const SPRING_OPTIONS = { type: "spring", stiffness: 300, damping: 30 };
 
-export default function CarouselDes({
+export default function MedaudCarousel({
   items = DEFAULT_ITEMS,
   baseWidth = 300,
   autoplay = false,
@@ -250,9 +201,7 @@ export default function CarouselDes({
               transition={effectiveTransition}
             >
               <div className={`carousel-item-header ${round ? "round" : ""}`}>
-                <span className="carousel-icon-container-horiz">
-                  {item.icon}
-                </span>
+                <span className="carousel-icon-container">{item.icon}</span>
               </div>
               <div className="carousel-item-content">
                 <div className="carousel-item-title">{item.title}</div>

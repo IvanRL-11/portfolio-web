@@ -11,10 +11,10 @@ const Hero = () => {
         <div className="info-p">
           <h1>
             Hola, soy Iván Romero
-            <br /> Diseñador de la Comunicación Gráfica
+            <br /> Diseñador Gráfico con enfoque en UX/UI y Desarrollo Web
           </h1>
           <p>
-            Diseñador enfocado en la creación de experiencias digitales claras y funcionales. Integro principios de usabilidad y diseño visual, complementando mi trabajo con conocimientos en desarrollo frontend.
+            Diseño experiencias digitales claras y funcionales, enfocadas en la usabilidad y la coherencia visual. Complemento mi proceso con conocimientos en desarrollo frontend para llevar las ideas a implementación.
           </p>
         </div>
       </section>

@@ -64,7 +64,7 @@ const DEFAULT_ITEMS = [
   },
   {
     title: "Flyer Deportivo",
-    description: "Poster Deportivo, Copa NOTIAUTO México",
+    description: "Flyer Deportivo, Copa NOTIAUTO México",
     id: 5,
     icon: (
       <img
