@@ -31,6 +31,11 @@ const Skills = () => {
             <p>60%</p>
           </figure>
           <figure className="icon">
+            <img src={Figma} alt="Figma icon" />
+            <figcaption>Figma</figcaption>
+            <p>35%</p>
+          </figure>
+          <figure className="icon">
             <img src={InD} alt="InDesign icon" />
             <figcaption>InDesign</figcaption>
             <p>50%</p>
@@ -44,11 +49,6 @@ const Skills = () => {
             <img src={AE} alt="After Effects icon" />
             <figcaption>After Effects</figcaption>
             <p>40%</p>
-          </figure>
-          <figure className="icon">
-            <img src={Figma} alt="Figma icon" />
-            <figcaption>Figma</figcaption>
-            <p>35%</p>
           </figure>
         </section>
         <h3 className="sub-title-sec">Desarrollo Web</h3>

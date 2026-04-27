@@ -28,7 +28,11 @@ const Meduad = () => {
             creando un tema personalizado desde cero, utilizando tecnologías
             como HTML, CSS, Sass y Bootstrap.
           </p>
-          <a href="https://medaud.alephdiscom.net/" target="_blank">Sitio web MEDAUD</a>
+          <div className="btn-link">
+            <a href="https://medaud.alephdiscom.net/" target="_blank">
+              Sitio web MEDAUD
+            </a>
+          </div>
         </article>
         <article className="Carousles-webP">
           <MedaudCarousel
@@ -40,7 +44,6 @@ const Meduad = () => {
             round={false}
           />
         </article>
-        
       </section>
     </>
   );

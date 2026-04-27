@@ -16,7 +16,14 @@ const DdaP = () => {
             Desarrollo Académico, implementado con WordPress. Contribuí con
             ajustes personalizados de layout y estilo mediante código CSS.
           </p>
-          <a href="https://desarrolloacademico.cenart.gob.mx/" target="_blank">Sitio web DDA</a>
+          <div className="btn-link">
+            <a
+              href="https://desarrolloacademico.cenart.gob.mx/"
+              target="_blank"
+            >
+              Sitio web DDA
+            </a>
+          </div>
         </article>
         <article className="Carousles-webP">
           <DDACarousel

@@ -335,6 +335,26 @@ body {
   background-color: #262626;
 }
 
+.btns-links {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .btns-links {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+}
+
+.btn-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .info-p {
   position: inherit;
   z-index: inherit;
@@ -904,7 +924,7 @@ h2 {
 
 .modal-container {
   position: relative;
-  padding: 1rem;
+  padding: 1.5rem;
   min-width: 300px;
   max-width: 900px;
   min-height: 300px;
@@ -914,10 +934,11 @@ h2 {
   color: #ffffff;
 }
 .modal-container button {
-  border-radius: 5px;
+  border-radius: 6px;
   border: thin solid #00cc66;
   font-size: 16px;
-  padding: 4px;
+  font-weight: bold;
+  padding: 8px;
   line-height: 1;
   background-color: #262626;
   color: #ffffff;
@@ -959,7 +980,7 @@ h2 {
   transition: all 0.2s ease-in-out;
   border: thin solid #00cc66;
   border-radius: 4px;
-  padding: 5px;
+  padding: 8px 12px;
   max-width: 180px;
   text-align: center;
 }
